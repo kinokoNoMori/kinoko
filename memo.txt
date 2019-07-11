@@ -3,3 +3,11 @@ git
 user.email=ftymdk@yahoo.co.jp
 user.name=kinokoNoMori
 pass = 714578hyznhA
+
+
+$ git remote set-url origin git://git@github.com:myoan/repository.git
+$ git push
+
+https://github.com:kinokoNoMori/kinoko.git
+git://git@github.com:myoan/repository.git
+git://git@github.com:kinokoNoMori/kinoko.git
