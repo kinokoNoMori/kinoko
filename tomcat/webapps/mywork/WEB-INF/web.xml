@@ -22,5 +22,32 @@
         <servlet-name>maple</servlet-name>
         <url-pattern>/maple</url-pattern>
     </servlet-mapping>
+    
+        <servlet>
+        <servlet-name>Template</servlet-name>
+        <servlet-class>ShowTemplate</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Template</servlet-name>
+        <url-pattern>/show</url-pattern>
+    </servlet-mapping>
+    
+        <servlet>
+        <servlet-name>RpgMenu</servlet-name>
+        <servlet-class>Menu</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RpgMenu</servlet-name>
+        <url-pattern>/menu</url-pattern>
+    </servlet-mapping>
+    
+        <servlet>
+        <servlet-name>RpgWalk</servlet-name>
+        <servlet-class>Walk</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RpgWalk</servlet-name>
+        <url-pattern>/walk</url-pattern>
+    </servlet-mapping>
 
 </web-app>

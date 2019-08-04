@@ -1,0 +1,52 @@
+Webアプリ開発入門 Servlet/JSP編 1章
+
+tomcat
+
+tomcat起動
+tomcat/bin/startup.sh
+
+tomcat停止
+tomcat/bin/shutdown.sh
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+Sarvletをコンパイル
+javac -classpath "../../lib/servlet-api.jar" -d WEB-INF/classes ShowTemplate.java
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+JSPタグの種類
+<%@ javaコード %> JSPの宣言(ディレクティブ)
+<%! javaコード %> 変数やメソッドの宣言
+<%= javaコード %> 式の評価結果を出力
+<% javaコード %> コードを実行
+<%-- javaコード --%> コメント
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+画面は
+/～（アドレス）で表示
+クラスというサーブレット経由で
+jspを呼び出す
+
+ルーティングの設定　：　web.xml内でコピペして修正
+サーブレットをコピー　：　~/myworkでcp コピー元.java 作るやつ.java
+もう一回　：　cp ~/WEB-INF/views/コピー元.jsp ~/WEB-INF/views/作るやつ.jsp
+サーブレットファイルを編集　：　作るやつ.java　　
+作るやつ.javaをコンパイル　；　javac -classpath "../../lib/servlet-api.jar" -d WEB-INF/classes 作るやつ.java
+~/views.jspを編集　：　
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
