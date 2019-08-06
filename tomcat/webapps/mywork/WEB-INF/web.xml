@@ -16,7 +16,7 @@
     
     <servlet>
         <servlet-name>maple</servlet-name>
-        <servlet-class>WelcomeToMapleStory</servlet-class>
+        <servlet-class>MapleStory</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>maple</servlet-name>
@@ -41,7 +41,7 @@
         <url-pattern>/menu</url-pattern>
     </servlet-mapping>
     
-        <servlet>
+    <servlet>
         <servlet-name>RpgWalk</servlet-name>
         <servlet-class>Walk</servlet-class>
     </servlet>
@@ -50,4 +50,60 @@
         <url-pattern>/walk</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>GameReview</servlet-name>
+        <servlet-class>Review</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GameReview</servlet-name>
+        <url-pattern>/review</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>WorldTriger</servlet-name>
+        <servlet-class>worldtriger</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WorldTriger</servlet-name>
+        <url-pattern>/worldtriger</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 </web-app>
