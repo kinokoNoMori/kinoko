@@ -4,15 +4,16 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title><%= request.getAttribute("name") %>のレビュー</title>
+        <title><%= request.getAttribute("name") %>トップ</title>
     </head>
     <body>
         <h1><%= request.getAttribute("name") %></h1>
-        <p><%= request.getAttribute("message") %></p>
         
+        <p><a href="review">ゲーム漫画レビュー</a></p>
+        <p><a href="menu">test</a></p>
         
         <br>
-        <p><a href="review">メニューに戻る</a></p>
-        <p><a href="top">総合トップに戻る</a></p>
+        <p><a href="html">HTMLの表記　一覧</a></p>
+    
     </body>
 </html>

@@ -5,6 +5,112 @@
         http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
         version="4.0" metadata-complete="true">
 
+
+
+<!-- トップ・一覧 -->
+    <servlet>
+        <servlet-name>Top</servlet-name>
+        <servlet-class>Top</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Top</servlet-name>
+        <url-pattern>/top</url-pattern>
+    </servlet-mapping>    
+
+    <servlet>
+        <servlet-name>GameReview</servlet-name>
+        <servlet-class>Review</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GameReview</servlet-name>
+        <url-pattern>/review</url-pattern>
+    </servlet-mapping>    
+    
+<!-- ゲーム各ページ -->
+
+    
+    <servlet>
+        <servlet-name>maple</servlet-name>
+        <servlet-class>MapleStory</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>maple</servlet-name>
+        <url-pattern>/maple</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>MineCraft</servlet-name>
+        <servlet-class>MineCraft</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MineCraft</servlet-name>
+        <url-pattern>/minecraft</url-pattern>
+    </servlet-mapping>
+    
+        
+
+<!-- 漫画各ページ -->
+    <!-- ワートリ -->
+    <servlet>
+        <servlet-name>WorldTriger</servlet-name>
+        <servlet-class>WorldTriger</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WorldTriger</servlet-name>
+        <url-pattern>/worldtriger</url-pattern>
+    </servlet-mapping>
+    <!-- 君と僕。 -->
+    <servlet>
+        <servlet-name>KimiToBoku</servlet-name>
+        <servlet-class>KimiToBoku</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>KimiToBoku</servlet-name>
+        <url-pattern>/kimitoboku</url-pattern>
+    </servlet-mapping>
+    <!-- ダンジョン飯 -->
+    <servlet>
+        <servlet-name>DangeonMesi</servlet-name>
+        <servlet-class>DangeonMesi</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DangeonMesi</servlet-name>
+        <url-pattern>/dangenmesi</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<!-- テスト -->
     <servlet>
         <servlet-name>Hello</servlet-name>
         <servlet-class>HelloWorld</servlet-class>
@@ -15,15 +121,6 @@
     </servlet-mapping>
     
     <servlet>
-        <servlet-name>maple</servlet-name>
-        <servlet-class>MapleStory</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>maple</servlet-name>
-        <url-pattern>/maple</url-pattern>
-    </servlet-mapping>
-    
-        <servlet>
         <servlet-name>Template</servlet-name>
         <servlet-class>ShowTemplate</servlet-class>
     </servlet>
@@ -32,7 +129,7 @@
         <url-pattern>/show</url-pattern>
     </servlet-mapping>
     
-        <servlet>
+    <servlet>
         <servlet-name>RpgMenu</servlet-name>
         <servlet-class>Menu</servlet-class>
     </servlet>
@@ -49,59 +146,24 @@
         <servlet-name>RpgWalk</servlet-name>
         <url-pattern>/walk</url-pattern>
     </servlet-mapping>
-
+    
     <servlet>
-        <servlet-name>GameReview</servlet-name>
-        <servlet-class>Review</servlet-class>
+        <servlet-name>RpgBattle</servlet-name>
+        <servlet-class>Battle</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>GameReview</servlet-name>
-        <url-pattern>/review</url-pattern>
+        <servlet-name>RpgBattle</servlet-name>
+        <url-pattern>/battle</url-pattern>
     </servlet-mapping>
     
-     <servlet>
-        <servlet-name>WorldTriger</servlet-name>
-        <servlet-class>WorldTriger</servlet-class>
+    <servlet>
+        <servlet-name>HtmlTest</servlet-name>
+        <servlet-class>HtmlTest</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>WorldTriger</servlet-name>
-        <url-pattern>/worldtriger</url-pattern>
-    </servlet-mapping>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+        <servlet-name>HtmlTest</servlet-name>
+        <url-pattern>/html</url-pattern>
+    </servlet-mapping>    
     
     
     

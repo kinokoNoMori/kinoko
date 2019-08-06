@@ -9,6 +9,9 @@
     <body>
         <h1><%= request.getAttribute("name") %>のアクション</h1>
         <p><%= request.getAttribute("message") %></p>
+        
+        <br>
         <p><a href="menu">メニューに戻る</a></p>
+        <p><a href="top">総合トップに戻る</a></p>
     </body>
 </html>

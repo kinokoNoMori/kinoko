@@ -4,15 +4,17 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>RPGの行動選択メニュー</title>
+        <title><%= request.getAttribute("name") %>のレビュー</title>
     </head>
+    
+    <h1>ジャンル：<%= request.getAttribute("genre") %></h1>
+    
     <body>
-        <h1>勇者のメニュー</h1>
-        <p><a href="hello">test</a></p>
-        <p><a href="walk">あるく</a></p>
-        <p><a href="attack">たたかう</a></p>
+        <h1><%= request.getAttribute("name") %>読んだ</h1>
+        <p><%= request.getAttribute("message") %></p>
         
         <br>
+        <p><a href="review">メニューに戻る</a></p>
         <p><a href="top">総合トップに戻る</a></p>
     </body>
 </html>

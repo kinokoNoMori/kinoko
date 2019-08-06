@@ -6,12 +6,16 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title><%= request.getAttribute("name") %>のレビュー</title>
     </head>
+    
+    <h1>ジャンル：<%= request.getAttribute("genre") %></h1>
+    <h1>ハード  ：<%= request.getAttribute("hard") %></h1>
+    
     <body>
-        <h1><%= request.getAttribute("name") %>のレビュー</h1>
+        <h1><%= request.getAttribute("name") %>をやった/h1>
         <p><%= request.getAttribute("message") %></p>
         
         <br>
-        <p><a href="review">レビュー一覧に戻る</a></p>
+        <p><a href="review">メニューに戻る</a></p>
         <p><a href="top">総合トップに戻る</a></p>
     </body>
 </html>
