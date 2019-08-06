@@ -6,13 +6,14 @@ public class MapleStory extends HttpServlet {
 
     public void doGet(HttpServletRequest request, HttpServletResponse response)
         throws IOException, ServletException {
-
-            response.setContentType("text/html");
-            PrintWriter out = response.getWriter();
-
-            out.println("<html><head>MapelStory</head><body>");
-            out.println("<p>メイプルってクそげーだよねって話</p>");
-            out.println("</body></html>");
+            
+            String title = "メイプルストーリー";
+            request.setAttribute("name", title);
+            request.setAttribute("message", title + "ってくそげーだよねって話");
+    
+            String view = "/WEB-INF/views/maple.jsp";
+            RequestDispatcher dispatcher = request.getRequestDispatcher(view);
+            dispatcher.forward(request, response);
         
     }
 }

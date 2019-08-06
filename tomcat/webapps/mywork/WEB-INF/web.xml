@@ -61,7 +61,7 @@
     
      <servlet>
         <servlet-name>WorldTriger</servlet-name>
-        <servlet-class>worldtriger</servlet-class>
+        <servlet-class>WorldTriger</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>WorldTriger</servlet-name>

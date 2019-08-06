@@ -10,8 +10,8 @@ public class HelloWorld extends HttpServlet {
             response.setContentType("text/html");
             PrintWriter out = response.getWriter();
 
-            out.println("<html><head>MapelStory</head><body>");
-            out.println("<p>Hello MapleWorld!</p>");
+            out.println("<html><head>HELLO_WORLD</head><body>");
+            out.println("<p>Hello World!</p>");
             out.println("</body></html>");
     }
 }

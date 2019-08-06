@@ -109,3 +109,14 @@
 06-Aug-2019 01:49:22.705 SEVERE [Catalina-utility-1] org.apache.catalina.core.StandardContext.startInternal Context [/mywork] startup failed due to previous errors
 06-Aug-2019 01:49:22.717 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mywork] is completed
 06-Aug-2019 01:50:02.726 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload Reloading context [/mywork]
+06-Aug-2019 02:05:23.154 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mywork] has started
+06-Aug-2019 02:05:23.926 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mywork] is completed
+06-Aug-2019 02:13:14.142 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload Reloading context [/mywork]
+06-Aug-2019 02:13:14.152 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mywork] has started
+06-Aug-2019 02:13:14.504 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mywork] is completed
+06-Aug-2019 02:13:24.507 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload Reloading context [/mywork]
+06-Aug-2019 02:13:24.508 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mywork] has started
+06-Aug-2019 02:13:24.601 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mywork] is completed
+06-Aug-2019 02:15:24.645 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload Reloading context [/mywork]
+06-Aug-2019 02:15:24.646 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mywork] has started
+06-Aug-2019 02:15:24.712 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mywork] is completed
