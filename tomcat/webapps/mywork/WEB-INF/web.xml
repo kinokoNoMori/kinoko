@@ -78,10 +78,43 @@
     </servlet-mapping>
     
     
-    
-    
-    
-    
+<!-- 自己紹介 -->
+    <!-- 自己紹介トップ -->
+    <servlet>
+        <servlet-name>SelfIntroduction</servlet-name>
+        <servlet-class>SelfIntroduction</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SelfIntroduction</servlet-name>
+        <url-pattern>/selfintroduction</url-pattern>
+    </servlet-mapping>  
+    <!-- 私について -->
+    <servlet>
+        <servlet-name>MyDates</servlet-name>
+        <servlet-class>MyDates</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MyDates</servlet-name>
+        <url-pattern>/mydates</url-pattern>
+    </servlet-mapping> 
+    <!-- 学習した言語について -->
+    <servlet>
+        <servlet-name>MyLanguages</servlet-name>
+        <servlet-class>MyLanguages</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MyLanguages</servlet-name>
+        <url-pattern>/mylanguages</url-pattern>
+    </servlet-mapping> 
+    <!-- 趣味 -->
+    <servlet>
+        <servlet-name>MyHobbies</servlet-name>
+        <servlet-class>MyHobbies</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MyHobbies</servlet-name>
+        <url-pattern>/myhobbies</url-pattern>
+    </servlet-mapping> 
     
     
     

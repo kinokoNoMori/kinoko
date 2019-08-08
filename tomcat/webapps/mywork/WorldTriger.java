@@ -11,7 +11,7 @@ public class WorldTriger extends HttpServlet {
         request.setAttribute("name", title);
         request.setAttribute("message", title + "を読んだ");
 
-        String view = "/WEB-INF/views/";
+        String view = "/WEB-INF/views/worldtriger.jsp";
         RequestDispatcher dispatcher = request.getRequestDispatcher(view);
         dispatcher.forward(request, response);
     }

@@ -9,11 +9,17 @@
     <body>
         <h1><%= request.getAttribute("name") %></h1>
         
+        <p><a href="selfintroduction">自己紹介</a></p>
+        
         <p><a href="review">ゲーム漫画レビュー</a></p>
-        <p><a href="menu">test</a></p>
+        
+        
         
         <br>
+        <br>
+        <p>===============================================================</p>
+        <p><a href="menu">test</a></p>
         <p><a href="html">HTMLの表記　一覧</a></p>
-    
+        
     </body>
 </html>
