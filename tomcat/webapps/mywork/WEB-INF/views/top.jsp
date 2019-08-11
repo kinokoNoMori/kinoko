@@ -9,6 +9,8 @@
     <body>
         <h1><%= request.getAttribute("name") %></h1>
         
+        <p><a href="rireki">履歴書(書？)</a></p>
+        
         <p><a href="selfintroduction">自己紹介</a></p>
         
         <p><a href="review">ゲーム漫画レビュー</a></p>

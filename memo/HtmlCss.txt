@@ -1,0 +1,3 @@
+(ページ内リン)
+<a name="top"></a>
+<a href="#top">~TOP</a>

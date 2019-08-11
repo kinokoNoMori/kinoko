@@ -6,16 +6,52 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title><%= request.getAttribute("name") %>のレビュー</title>
     </head>
-    
-    <h1>ジャンル：<%= request.getAttribute("genre") %></h1>
-    <h1>ハード  ：<%= request.getAttribute("hard") %></h1>
-    
     <body>
-        <h1><%= request.getAttribute("name") %>をやった/h1>
-        <p><%= request.getAttribute("message") %></p>
+        <a name="top"></a>
         
+        <a href="review" style="background:#0000ff ;color:#99FFFF;">メニューに戻る</a>
+        <a href="top">総合トップに戻る</a><br>
+        <a href="#INFO">~基本情報</a>
+        <a href="#ara">~ゲーム性</a>
+        <a href="#kanso">~感想</a><br>
+        <p>--------------------------------------------------------------------</p>
+        <h1><%= request.getAttribute("name") %></h1>
+        <p>--------------------------------------------------------------------</p>
+        <a name="INFO"></a>
+        <h3>基本情報</h3>
+        <table>
+        <tr>
+        <td>
+        ハード  ：<%= request.getAttribute("hard") %>
+        </td>
+        </tr>
+        <tr>
+        <td>
+        ジャンル：<%= request.getAttribute("genre") %>
+        </td>
+        </tr>
+        </table>
+        <a href="#top">ページ最上部へ</a>
+        <p>--------------------------------------------------------------------</p>
+        <a name="ara"></a>
+        <h3>ゲーム性</h3>
+        <p><%= request.getAttribute("synopsis") %></p>
+        <a href="#top">ページ最上部へ</a>
+        <p>--------------------------------------------------------------------</p>
+        <a name="kanso"></a>
+        <h3>感想</h3>
+        <p><%= request.getAttribute("message") %></p>
+        <a href="#top">ページ最上部へ</a>
+        <p>--------------------------------------------------------------------</p>
+        
+
         <br>
         <p><a href="review">メニューに戻る</a></p>
         <p><a href="top">総合トップに戻る</a></p>
     </body>
 </html>
+
+
+
+
+

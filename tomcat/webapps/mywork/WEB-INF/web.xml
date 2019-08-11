@@ -26,6 +26,15 @@
         <url-pattern>/review</url-pattern>
     </servlet-mapping>    
     
+        <servlet>
+        <servlet-name>Rireki</servlet-name>
+        <servlet-class>Rireki</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Rireki</servlet-name>
+        <url-pattern>/rireki</url-pattern>
+    </servlet-mapping>  
+    
 <!-- ゲーム各ページ -->
 
     
