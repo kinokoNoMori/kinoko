@@ -6,13 +6,19 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>履歴書</title>
     </head>
-    <body>
+    <body style="background:#ffffff;color:#696969;">
         <a name="top"></a>
-        <a href="top" style="background:#0000ff ;color:#99FFFF;">総合トップに戻る</a><br>
+        
+         <p style="padding: 0.5em;/*文字周りの余白*/
+  color: #494949;/*文字色*/
+  background: #fffaf4;/*背景色*/
+  border-left: solid 5px #ffaf58;/*左線（実線 太さ 色）*/">
+        <a href="top" style="background:#e6e6fa;">総合トップに戻る</a><br>
         <a href="#RIREKI">~履歴書</a>
         <a href="#GAKUREKI">~学歴・職歴</a>
         <a href="#SIKAKU">~資格</a>
         <a href="#ZEMI">~ゼミナールでの研究課題・得意科目</a>
+        </p>
         <p>--------------------------------------------------------------------</p>
         <a name="RIREKI"></a>
         <h1>履歴書</h1>

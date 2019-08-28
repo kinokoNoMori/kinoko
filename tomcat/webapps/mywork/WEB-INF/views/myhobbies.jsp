@@ -6,7 +6,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>趣味</title>
     </head>
-    <body>
+    <body style="background:#ffffff">
         <h1>趣味</h1>
         
         <h3>サッカー</h3>

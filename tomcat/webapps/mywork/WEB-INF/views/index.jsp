@@ -6,7 +6,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Hello Template</title>
     </head>
-    <body>
+    <body style="background:#ffffff">
         <h1>Hello Template</h1>
         <strong><%= new java.util.Date() %></strong>
         

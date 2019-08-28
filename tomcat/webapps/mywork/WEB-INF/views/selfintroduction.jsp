@@ -6,8 +6,8 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>自己紹介メニュー</title>
     </head>
-    <body>
-        <h1>自己紹介メニュー</h1>
+    <body style="background:#ffffff">
+        <h1>自己紹介</h1>
         
         <p><a href="mydates">私について</a></p>
         <p><a href="mylanguages">学習した言語</a></p>

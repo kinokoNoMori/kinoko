@@ -6,7 +6,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>学習言語</title>
     </head>
-    <body>
+    <body style="background:#ffffff">
         <h1>学習言語</h1>
         
         <h2>C</h2>

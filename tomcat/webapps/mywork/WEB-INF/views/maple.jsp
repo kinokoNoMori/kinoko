@@ -6,7 +6,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title><%= request.getAttribute("name") %>のレビュー</title>
     </head>
-    <body>
+    <body style="background:#ffffff">
         <h1><%= request.getAttribute("name") %>のレビュー</h1>
         <p><%= request.getAttribute("message") %></p>
         

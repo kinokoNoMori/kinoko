@@ -7,7 +7,7 @@
         <title><%= request.getAttribute("name") %></title>
     </head>
     
-    <body>
+    <body style="background:#ffffff">
         <%-- http://www.htmq.com/html/indexm.shtml　--%>
         <h1>h1タグ</h1>
         <h2>h2タグ</h2>

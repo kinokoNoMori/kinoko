@@ -6,10 +6,14 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title><%= request.getAttribute("name") %>のレビュー</title>
     </head>
-    <body>
+    <body style="background:#ffffff">
         <a name="top"></a>
+        <p style="padding: 0.5em;/*文字周りの余白*/
+        color: #494949;/*文字色*/
+        background: #fffaf4;/*背景色*/
+        border-left: solid 5px #ffaf58;/*左線（実線 太さ 色）*/">
         
-        <a href="review" style="background:#0000ff ;color:#99FFFF;">メニューに戻る</a>
+        <a href="review" >メニューに戻る</a>
         <a href="top">総合トップに戻る</a><br>
         <a href="#INFO">~基本情報</a>
         <a href="#ara">~ゲーム性</a>

@@ -6,7 +6,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>自己紹介</title>
     </head>
-    <body>
+    <body style="background:#ffffff">
         <a href="selfintroduction">自己紹介トップに戻る</a>
         <a href="top">総合トップに戻る</a>
         <br>

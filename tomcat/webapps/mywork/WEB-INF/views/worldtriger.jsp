@@ -6,7 +6,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title><%= request.getAttribute("name") %>のレビュー</title>
     </head>
-    <body>
+    <body style="background:#ffffff">
         <a name="top"></a>
         <a href="review" style="background:#0000ff ;color:#99FFFF;">メニューに戻る</a>
         <a href="top">総合トップに戻る</a><br>

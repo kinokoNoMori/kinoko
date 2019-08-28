@@ -6,7 +6,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>RPGの行動選択メニュー</title>
     </head>
-    <body>
+    <body style="background:#ffffff">
         <h1><%= request.getAttribute("name") %>のアクション</h1>
         <p><%= request.getAttribute("message") %></p>
         
