@@ -8,10 +8,11 @@ public class ResultServlet extends HttpServlet {
 
         request.setCharacterEncoding("utf-8");
         
-        String article = request.getParameter("article");
-        String userName = request.getParameter("userName");
         request.setAttribute("message", "投稿しました！");
+        
+        String article = request.getParameter("article");
         request.setAttribute("article", article);
+        String userName = request.getParameter("userName");
         request.setAttribute("userName", userName);
         
 

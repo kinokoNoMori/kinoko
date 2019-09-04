@@ -4,7 +4,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
-        <title>Java - paiza</title>
+        <title>borad_result</title>
     </head>
     <body>
         <% String message = (String)request.getAttribute("message");%>

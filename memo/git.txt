@@ -1,7 +1,7 @@
 git 
 
-user.email=ftymdk@yahoo.co.jp
-user.name=kinokoNoMori
+user.email = ftymdk@yahoo.co.jp
+user.name = kinokoNoMori
 pass = 714578hyznhA
 
 $ git remote set-url origin git://git@github.com:myoan/repository.git

@@ -9,11 +9,11 @@
     </head>
     <body>
         <h1>1行掲示板</h1>
-        <form action="post" method="post">
+        <form action="result" method="post">
             <label for="article">投稿</label>
             <input type="text" name="article">
             <p></p>
-            <label for="name">名前</label>
+            <label for="userName">名前</label>
             <input type="text" name="userName">
             <button type="submit">送信する</button>
         </form>
