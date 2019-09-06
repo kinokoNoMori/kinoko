@@ -9,7 +9,7 @@
     <body style="background:#ffffff">
         <a name="top"></a>
         
-         <p style="padding: 0.5em;/*文字周りの余白*/
+        <p style="padding: 0.5em;/*文字周りの余白*/
         color: #494949;/*文字色*/
         background: #fffaf4;/*背景色*/
         border-left: solid 5px #ffaf58;/*左線（実線 太さ 色）*/">

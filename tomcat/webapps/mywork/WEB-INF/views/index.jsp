@@ -7,7 +7,7 @@
         <title>Hello Template</title>
     </head>
     <body style="background:#ffffff">
-        <h1>Hello Template</h1>
+        <h1 style="color: #364e96; padding: 0.5em 0; border-top: solid 3px #364e96; border-bottom: solid 3px #364e96;">Hello Template</h1>
         <strong><%= new java.util.Date() %></strong>
         
         <% String message = (String)request.getAttribute("message");%>

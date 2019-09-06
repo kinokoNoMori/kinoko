@@ -7,7 +7,8 @@
         <title><%= request.getAttribute("name") %>のレビュー</title>
     </head>
     <body style="background:#ffffff">
-        <h1><%= request.getAttribute("name") %>のレビュー</h1>
+        <h1 style="color: #364e96; padding: 0.5em 0; border-top: solid 3px #364e96; border-bottom: solid 3px #364e96;">
+        <%= request.getAttribute("name") %>のレビュー</h1>
         <p><%= request.getAttribute("message") %></p>
         
         <br>

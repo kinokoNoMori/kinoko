@@ -6,16 +6,18 @@ import javax.servlet.http.*;
 public class BoardServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        StringBuilder articles = new StringBuilder();
-        File file = new File(getServletContext().getRealPath("articles.txt"));
+        StringBuilder boards = new StringBuilder();
+        File file = new File(getServletContext().getRealPath("boards.txt"));
         Scanner scan = new Scanner(file);
 
         while(scan.hasNext()){
             String line = scan.nextLine();
-            articles.append(line).append(System.getProperty("line.separator"));
+            boards.append(line).append(System.getProperty("line.separator"));
         }
-
-        request.setAttribute("articles", articles);
+        
+        
+            
+        request.setAttribute("board", boards);
 
         String view = "/WEB-INF/views/board.jsp";
         RequestDispatcher dispatcher = request.getRequestDispatcher(view);

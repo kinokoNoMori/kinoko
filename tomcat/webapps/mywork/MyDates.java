@@ -27,7 +27,7 @@ public class MyDates extends HttpServlet {
                 "キリが良いと納得できる場所の設置量を調整することで、長時間を避けることができました。";
             request.setAttribute("cons", tansyo);
             
-            String gakuseiganbari = "私はコンビニでのアルバイトを頑張り、コミュニケーションの大切さを学びました。<br>"+
+            String gakuseiganbari = "　私はコンビニでのアルバイトを頑張り、コミュニケーションの大切さを学びました。<br>"+
                 "　たとえば、短い作業であっても、完了したかどうか、途中ならどこまでやったかを"+
                 "お互いに報告しあい、手伝いがいるかどうかを確かめたりや、得意不得意を知ることで"+
                 "適材適所の配置に変えることができるようになり、作業の効率を上げることができました。<br>"+
@@ -36,10 +36,11 @@ public class MyDates extends HttpServlet {
                 "人手不足が問題になっている中、乗り切ることができました。";
             request.setAttribute("gakuseizidaiganbattakoto", gakuseiganbari);
             
-            String sev = "　サーバーサイドエンジニアになりたいです。<br>"+
+            String sev = "　webアプリ開発がしたいです。<br>"+
                 "　現在、様々なOSやハードが存在しているので、それぞれに特化したものを作るよりも、"+
                 "IPhoneやAndroid,pc,携帯型ゲーム機などといった、様々なアクセス方法がある"+
-                "ウェブサーバー上のサービスの方が汎用性が高く、需要が伸びると考えているからです。";
+                "ウェブサーバー上のサービスの方が汎用性が高く、需要が伸びると考えているからです。<br>"+
+                "　しかし、スマホが当たり前の時代なのでスマホに特化したアプリ等をつくることも経験したいと思っています";
             request.setAttribute("service", sev);
             
             

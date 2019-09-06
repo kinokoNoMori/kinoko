@@ -7,7 +7,15 @@
         <title>学習言語</title>
     </head>
     <body style="background:#ffffff">
-        <h1>学習言語</h1>
+        <p style="padding: 0.5em;/*文字周りの余白*/
+        color: #494949;/*文字色*/
+        background: #fffaf4;/*背景色*/
+        border-left: solid 5px #ffaf58;/*左線（実線 太さ 色）*/">
+        <a href="selfintroduction">自己紹介トップに戻る</a>
+        <a href="top">総合トップに戻る</a>
+        <br>
+        <<h1 style="color: #364e96; padding: 0.5em 0; border-top: solid 3px #364e96; border-bottom: solid 3px #364e96;">
+        学習言語</h1>
         
         <h2>C</h2>
         <p>★　☆　☆　☆　☆<p>

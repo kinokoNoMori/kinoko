@@ -22,5 +22,14 @@
         <servlet-name>ResultServlet</servlet-name>
         <url-pattern>/result</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>BoardServlet</servlet-name>
+        <servlet-class>BoardServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BoardServlet</servlet-name>
+        <url-pattern>/board</url-pattern>
+    </servlet-mapping>
 
 </web-app>

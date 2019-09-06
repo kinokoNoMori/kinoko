@@ -14,7 +14,8 @@
         <a href="#ara">~あらすじ</a>
         <a href="#kanso">~感想</a><br>
         <p>--------------------------------------------------------------------</p>
-        <h1><%= request.getAttribute("name") %></h1>
+        <h1 style="color: #364e96; padding: 0.5em 0; border-top: solid 3px #364e96; border-bottom: solid 3px #364e96;">
+        <%= request.getAttribute("name") %></h1>
         <p>--------------------------------------------------------------------</p>
         <a name="INFO"></a>
         <h3>基本情報</h3>
