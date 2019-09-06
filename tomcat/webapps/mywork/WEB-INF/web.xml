@@ -115,6 +115,18 @@
         <servlet-name>MyLanguages</servlet-name>
         <url-pattern>/mylanguages</url-pattern>
     </servlet-mapping> 
+    
+    <!-- 作品紹介hページ -->
+    <servlet>
+        <servlet-name>MyCreature</servlet-name>
+        <servlet-class>MyCreature</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MyCreature</servlet-name>
+        <url-pattern>/mycreature</url-pattern>
+    </servlet-mapping> 
+    
+    
     <!-- 趣味 -->
     <servlet>
         <servlet-name>MyHobbies</servlet-name>
