@@ -9,7 +9,7 @@ public class MapleStory extends HttpServlet {
             
             String title = "メイプルストーリー";
             request.setAttribute("name", title);
-            request.setAttribute("message", title + "ってくそげーだよねって話");
+            request.setAttribute("message", "この時代に"+title + "やってるって・・・");
     
             String view = "/WEB-INF/views/maple.jsp";
             RequestDispatcher dispatcher = request.getRequestDispatcher(view);

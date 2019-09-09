@@ -12,6 +12,11 @@ tomcat/bin/shutdown.sh
 Sarvletをコンパイル
 javac -classpath "../../lib/servlet-api.jar" -d WEB-INF/classes ShowTemplate.java
 
+コマンド　
+サーブレットを参照?
+-classpath "../../lib/servlet-api.jar"
+コンパイルしてできたクラスファイルをしまうところを指定
+-d WEB-INF/classes 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 JSPタグの種類
 <%@ javaコード %> JSPの宣言(ディレクティブ)

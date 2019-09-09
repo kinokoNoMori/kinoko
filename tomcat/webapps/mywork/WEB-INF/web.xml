@@ -126,6 +126,15 @@
         <url-pattern>/mycreature</url-pattern>
     </servlet-mapping> 
     
+    <servlet>
+        <servlet-name>IgoPyCode</servlet-name>
+        <servlet-class>IgoPyCode</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>IgoPyCode</servlet-name>
+        <url-pattern>/igopyCode</url-pattern>
+    </servlet-mapping> 
+    
     
     <!-- 趣味 -->
     <servlet>

@@ -21019,3 +21019,30 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 06-Sep-2019 07:27:53.187 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload Reloading context [/mywork]
 06-Sep-2019 07:27:53.187 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mywork] has started
 06-Sep-2019 07:27:53.224 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mywork] is completed
+06-Sep-2019 07:41:33.451 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mywork] has started
+06-Sep-2019 07:41:33.562 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mywork] is completed
+07-Sep-2019 05:09:40.393 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload Reloading context [/mywork]
+07-Sep-2019 05:09:40.403 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mywork] has started
+07-Sep-2019 05:09:40.783 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mywork] is completed
+07-Sep-2019 05:17:50.929 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mywork] has started
+07-Sep-2019 05:17:51.014 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mywork] is completed
+07-Sep-2019 05:21:31.079 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload Reloading context [/mywork]
+07-Sep-2019 05:21:31.079 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mywork] has started
+07-Sep-2019 05:21:31.149 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mywork] is completed
+07-Sep-2019 05:22:01.158 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload Reloading context [/mywork]
+07-Sep-2019 05:22:01.158 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mywork] has started
+07-Sep-2019 05:22:01.194 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mywork] is completed
+07-Sep-2019 05:46:01.687 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mywork] has started
+07-Sep-2019 05:46:01.815 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mywork] is completed
+07-Sep-2019 05:47:21.837 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mywork] has started
+07-Sep-2019 05:47:21.955 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mywork] is completed
+07-Sep-2019 05:53:52.130 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mywork] has started
+07-Sep-2019 05:53:52.249 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mywork] is completed
+07-Sep-2019 05:59:22.379 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mywork] has started
+07-Sep-2019 05:59:22.452 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mywork] is completed
+07-Sep-2019 06:00:12.470 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mywork] has started
+07-Sep-2019 06:00:12.519 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mywork] is completed
+07-Sep-2019 06:10:12.685 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mywork] has started
+07-Sep-2019 06:10:12.741 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mywork] is completed
+09-Sep-2019 02:56:32.294 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/mydatabase]
+09-Sep-2019 02:56:33.207 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/mydatabase] has finished in [921] ms

@@ -13,8 +13,7 @@ public class DangeonMesi extends HttpServlet {
         String genre = "ギャグ";
         request.setAttribute("genre", genre);
         
-        request.setAttribute("message", "ネトゲのフレンドに勧められて読んでみました。"+
-        "3巻くらいまではシリアス:ギャグ＝０：１０で面白い尾");
+        request.setAttribute("message", "");
 
         String view = "/WEB-INF/views/comics.jsp";
         RequestDispatcher dispatcher = request.getRequestDispatcher(view);

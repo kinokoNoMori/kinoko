@@ -4,7 +4,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>作品（コードのみ）</title>
+        <title>作品</title>
     </head>
     
     <body style="background:#ffffff">
@@ -15,26 +15,21 @@
         <a href="top">総合トップに戻る</a>
         <a name="top"></a>
         <br>
-        <a href="#io">~paizaIOのURL</a>
+        <a href="#board">~掲示板</a>
         <a href="#igo_python">~囲碁のPythonコード</a>
         
         <h1 style="color: #364e96; padding: 0.5em 0; border-top: solid 3px #364e96; border-bottom: solid 3px #364e96;">
-        作品（コードのみ）</h1>
+        作成物</h1>
         
-        <a name="io"></a>    
-        <h2>PaizaIOのURL</h2>
-        <p><%= request.getAttribute("IO") %></p>
-        <a href=<%= request.getAttribute("IO") %> target="_blank">PaizaIO</a>
-
-        <br>
+        <a name="board"></a>
+        <h2>掲示板</h2>
+        <p><a href="form">掲示板</a></p>
+        
         <a name="igo_python"></a>
         <h2>囲碁のPythonコード</h2>
-        <table border=5; bordercolor="#e6e6fa">
-            <tr><td>
-            <p><%= request.getAttribute("igo_py") %></p>
-            </td></tr>
-        </table>
+        <p><a href="igopyCode">コード</a></p>
         <br>
+        
         
         <p><a href="top">総合トップ</a></p>
     

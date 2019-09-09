@@ -11,6 +11,7 @@ public class MyCreature extends HttpServlet {
             String Igo = "pythonの囲碁のコード";
             request.setAttribute("igo_py", Igo);
         
+            //paizaIOのURL
             String PiazaIO = "https://paiza.io/ja/projects/new";
             request.setAttribute("IO", PiazaIO);
             

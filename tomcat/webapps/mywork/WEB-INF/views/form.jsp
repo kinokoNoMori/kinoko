@@ -13,12 +13,15 @@
         color: #494949;/*文字色*/
         background: #fffaf4;/*背景色*/
         border-left: solid 5px #ffaf58;/*左線（実線 太さ 色）*/">
-        <a href="top">総合トップに戻る</a><br>
-        
+        <a href="top">総合トップに戻る</a>
+        <a href="mycreature">作成物一覧に戻る</a>
+        <br>
+        <a href="#topBoard">~掲示板の最上段へ</a><br>
         
         <% String message = (String)request.getAttribute("message");%>
         <h1 style="color: #364e96; padding: 0.5em 0; border-top: solid 3px #364e96; border-bottom: solid 3px #364e96;">
         <%= message %></h1>
+        <a name="topBoard"></a>
         <form action="result" method="post" >
             <label for="name">名前</label>
             <input type="text" name="userName">
@@ -29,7 +32,7 @@
         </form>
         
         <p></p>
-        <table>
+        <table border=5; bordercolor="#e6e6fa">
             <tr><th>名前</th><th>投稿</th></tr>
             <% String articles = request.getAttribute("articles").toString(); %>
             <% String[] lines = articles.split("\n", 0); %>
@@ -44,6 +47,7 @@
             <% } %>
             
         </table>
+        <a href="#topBoard">~掲示板の最上段へ</a><br>
         <br>
         <a href="top">総合トップに戻る</a><br>
     </body>
