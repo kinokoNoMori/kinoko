@@ -36,6 +36,8 @@ public class MyDates extends HttpServlet {
                 "人手不足が問題になっている中、乗り切ることができました。";
             request.setAttribute("gakuseizidaiganbattakoto", gakuseiganbari);
             
+            
+            //web系用
             String sev = "　webアプリ開発がしたいです。<br>"+
                 "　現在、様々なOSやハードが存在しているので、それぞれに特化したものを作るよりも、"+
                 "IPhoneやAndroid,pc,携帯型ゲーム機などといった、様々なアクセス方法がある"+
@@ -43,9 +45,24 @@ public class MyDates extends HttpServlet {
                 "　しかし、スマホが当たり前の時代なのでスマホに特化したアプリ等をつくることも経験したいと思っています";
             request.setAttribute("service", sev);
             
+            //セキュリティ系用
+            String sev2 = "　私は、学校で情報セキュリティの授業を取っています。<br>"+
+                "　その授業では、情報を守る手段や漏れ方、引き出す手段が紹介されていました。<br>"+
+                "　現在、インターネットを当たり前のように利用していますが、<br>"+
+                "その陰では、様々な攻撃に対する防衛策がなされていると思います。<br>"+
+                "　そんな陰から生活を支えているところに魅力を感じ、興味を持ちました。<br>";
+            request.setAttribute("security", sev2);
             
-            String mirai = "どういうエンジニアになりたいか";
+            
+            // どういうエンジニアになりたいか
+            String mirai = "　私は、プログラミングのことをほとんど独学で学んできました。<br>"+
+            "なので、まずは研修で基本的な技術や知識を学び、情報系の学校を出た人達に追いつきたいと思います。<br>"+
+            "そこからは、チームでの仕事を学び、少しずつ引っ張ってもらう側から引っ張っていく側に代わっていきたいです。<br>"+
+            "　また、ウェブサイトの制作だけでなく、システムの構築や保守など、<br>"+
+            "こなすことのできる仕事の範囲やスキルを増やしていくことで、社内での自分の価値を高めたいです。。<br>";
             request.setAttribute("future", mirai);
+            
+            
             
             
             String view = "/WEB-INF/views/mydates.jsp";

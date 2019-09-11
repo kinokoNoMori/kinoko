@@ -29,10 +29,15 @@ public class Rireki extends HttpServlet {
             String  university = "城西大学";
             request.setAttribute("university", university);
             
-            
-            
+            String tagu = "<p style=\"padding: 0.5em;color: #494949;background: #fffaf4;border-left: solid 5px #ffaf58;\">"+
+            "<a href=\"top\">総合トップ</a><a>＞</a><a href=\"selfintroduction\">自己紹介</a><a>＞</a><a>履歴書</a><br>";
+            request.setAttribute("tag", tagu);
         
-            String view = "/WEB-INF/views/rireki.jsp";
+        
+        
+        
+        
+        String view = "/WEB-INF/views/rireki.jsp";
             RequestDispatcher dispatcher = request.getRequestDispatcher(view);
             dispatcher.forward(request, response);
     }

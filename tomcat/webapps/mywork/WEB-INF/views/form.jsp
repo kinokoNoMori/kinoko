@@ -13,8 +13,10 @@
         color: #494949;/*文字色*/
         background: #fffaf4;/*背景色*/
         border-left: solid 5px #ffaf58;/*左線（実線 太さ 色）*/">
-        <a href="top">総合トップに戻る</a>
-        <a href="mycreature">作成物一覧に戻る</a>
+        <a href="top">総合トップ</a><a>＞</a>
+        <a href="mycreature">作成物</a><a>＞</a>
+        <a>掲示板</a><a>＜</a>
+        <a href="mylanguages">学習した言語ページ</a>
         <br>
         <a href="#topBoard">~掲示板の最上段へ</a><br>
         
@@ -49,6 +51,12 @@
         </table>
         <a href="#topBoard">~掲示板の最上段へ</a><br>
         <br>
-        <a href="top">総合トップに戻る</a><br>
+        <p style="padding: 0.5em;/*文字周りの余白*/
+        color: #494949;/*文字色*/
+        background: #fffaf4;/*背景色*/
+        border-left: solid 5px #ffaf58;/*左線（実線 太さ 色）*/"><a href="top">総合トップ</a><a>＞</a>
+        <a href="mycreature">作成物</a><a>＞</a>
+        <a>掲示板</a><a>＜</a>
+        <a href="mylanguages">学習した言語ページ</a></p><br>
     </body>
 </html>

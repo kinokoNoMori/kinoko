@@ -202,6 +202,16 @@ public class IgoPyCode extends HttpServlet {
             +"main()";
             request.setAttribute("code", code);
             
+            String kodawari = "　裏返す石を探す方向をベクトルを使った。<br>"+
+            "数学科特有の良い発想だと思っていたが、<br>"+
+            "蟻本等アルゴリズム関連の本や記事にはありふれていて、軽いショック・・・<br>"+
+            "　色毎に書いていたら長くなるので配列に色を押し込み、<br>"+
+            "ターンから置く色を割り出すようにして、コードを短くした。<br>"+
+            "　また、メソッドを使うことでもゲームを進行するメインメソッドを短くできた。<br>"+
+            "　次は再起等のアルゴリズムを使って色を変える処理を書きたい。";
+            request.setAttribute("kodawari", kodawari);
+            
+            
             String view = "/WEB-INF/views/code.jsp";
             RequestDispatcher dispatcher = request.getRequestDispatcher(view);
             dispatcher.forward(request, response);

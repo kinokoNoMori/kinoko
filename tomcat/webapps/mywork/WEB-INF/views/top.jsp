@@ -10,20 +10,19 @@
         <h1 style="color: #364e96; padding: 0.5em 0; border-top: solid 3px #364e96; border-bottom: solid 3px #364e96;">
         <%= request.getAttribute("name") %>
         </h1>
-        個人的なもの
-        <p><a href="rireki">履歴書(書？)</a></p>
-        
+        <h3 style ="background: linear-gradient(transparent 70%, #a7d6ff 70%);">個人的なもの</h3>
         <p><a href="selfintroduction">自己紹介</a></p>
         <br>
-        作成物
+        <h3 style ="background: linear-gradient(transparent 70%, #a7d6ff 70%);">作成物</h3>
         <p><a href="mycreature">作成物</a></p>
         
         <br>
         <br>
+        <!--
         <p>===============================================================</p>
         <p>工事中。見ないでください。</p>
         
         <p><a href="review">未ゲーム漫画感想</a></p>
-        
+        -->
     </body>
 </html>

@@ -12,9 +12,9 @@
         color: #494949;/*文字色*/
         background: #fffaf4;/*背景色*/
         border-left: solid 5px #ffaf58;/*左線（実線 太さ 色）*/">
-        
+        <a href="top">総合トップに戻る</a>>
         <a href="review" >メニューに戻る</a>
-        <a href="top">総合トップに戻る</a><br>
+        <br>
         <a href="#INFO">~基本情報</a>
         <a href="#ara">~ゲーム性</a>
         <a href="#kanso">~感想</a><br>

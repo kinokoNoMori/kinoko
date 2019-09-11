@@ -20,9 +20,13 @@
         
         <p>名前:<%= userName %></p>
         <p>投稿:<%= article %></p>
+        <a href="form">戻る</a></p>
         <br>
-        <p><a href="form">戻る</a></p>
-        <a href="top">総合トップに戻る</a><br>
+        <p style="padding: 0.5em;/*文字周りの余白*/
+        color: #494949;/*文字色*/
+        background: #fffaf4;/*背景色*/
+        border-left: solid 5px #ffaf58;/*左線（実線 太さ 色）*/">
+        <a href="top">総合トップに戻る</a></p>
         </form>
     </body>
 </html>

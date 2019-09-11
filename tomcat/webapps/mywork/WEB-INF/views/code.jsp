@@ -11,10 +11,14 @@
             color: #494949;/*文字色*/
             background: #fffaf4;/*背景色*/
             border-left: solid 5px #ffaf58;/*左線（実線 太さ 色）*/">
-        <a href="top" style="background:#e6e6fa;">総合トップに戻る</a>
-        <a href="mycreature">作品ページへ</a>
+        <a href="top">総合トップ</a><a>＞</a>
+        <a href="mycreature">作成物</a><a>＞</a>
+        <a>掲示板</a><a>＜</a>
+        <a href="mylanguages">学習した言語ページ</a>
         <br>
+        <a href="#command">~実行コマンド</a>
         <a href="#code">~コード</a>
+        </p>
         
         <h1 style="color: #364e96; padding: 0.5em 0; border-top: solid 3px #364e96; border-bottom: solid 3px #364e96;">
         <%= request.getAttribute("name") %>
@@ -23,15 +27,28 @@
         
          
         
+        <a name="command"></a>
+        <h3 style ="background: linear-gradient(transparent 70%, #a7d6ff 70%);">実行コマンド</h3>
+        <p>~/kinoko/memo$ python igo.py</p>
+        <br>    
         <a name="code"></a>
+        <h3 style ="background: linear-gradient(transparent 70%, #a7d6ff 70%);">コード</h3>
         <table border=5; bordercolor="#e6e6fa">
             <tr><td>
             <%= request.getAttribute("code") %>
             </td></tr>
-            <p>実行コマンド<br>~/kinoko/memo$ python igo.py</p>
         </table>
         <br>
+        
         <a href="#TOP">~ページ最上部</a>
-        <p><a href="top">総合トップに戻る</a></p>
+        <p style="padding: 0.5em;/*文字周りの余白*/
+            color: #494949;/*文字色*/
+            background: #fffaf4;/*背景色*/
+            border-left: solid 5px #ffaf58;/*左線（実線 太さ 色）*/">
+        <a href="top">総合トップ</a><a>＞</a>
+        <a href="mycreature">作成物</a><a>＞</a>
+        <a>掲示板</a><a>＜</a>
+        <a href="mylanguages">学習した言語ページ</a>
+        </p>
     </body>
 </html>

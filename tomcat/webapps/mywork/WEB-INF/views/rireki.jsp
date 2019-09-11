@@ -9,11 +9,7 @@
     <body style="background:#ffffff;color:#696969;">
         <a name="top"></a>
         
-         <p style="padding: 0.5em;/*文字周りの余白*/
-  color: #494949;/*文字色*/
-  background: #fffaf4;/*背景色*/
-  border-left: solid 5px #ffaf58;/*左線（実線 太さ 色）*/">
-        <a href="top" style="background:#e6e6fa;">総合トップに戻る</a><br>
+        <%= request.getAttribute("tag") %>
         <a href="#RIREKI">~履歴書</a>
         <a href="#GAKUREKI">~学歴・職歴</a>
         <a href="#SIKAKU">~資格</a>
@@ -111,6 +107,6 @@
         
         <br>
         <a href="#TOP">~ページ最上部</a>
-        <p><a href="top">総合トップに戻る</a></p>
+        <%= request.getAttribute("tag") %>
     </body>
 </html>

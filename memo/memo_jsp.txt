@@ -1,5 +1,17 @@
-Webアプリ開発入門 Servlet/JSP編 1章
+cssの代わり（？）とはこういうことだったのか・・・
+ーーーーーーー
+タグをJavaファイルのString変数に保持させて
+// .java
+String tagu = "<p style=\"padding: 0.5em;color: #494949;background: #fffaf4;border-left: solid 5px #ffaf58;\">"+
+            "<a href=\"top\">総合トップ</a><a>＞</a><a href=\"selfintroduction\">自己紹介</a><a>＞</a><a>履歴書</a><br>";
+request.setAttribute("tag", tagu);
 
+jspファイルで呼び出したら楽だった・・・
+// .jsp
+<%= request.getAttribute("tag") %>
+
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 tomcat
 
 tomcat起動
