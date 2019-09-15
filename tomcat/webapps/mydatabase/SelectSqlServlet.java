@@ -23,7 +23,7 @@ public class SelectSqlServlet extends HttpServlet {
 
         out.println("<p>Hello World!</p>");
 
-        String url = "jdbc:mysql://localhost/mydb";
+        String url = "jdbc:mysql://localhost:3306/phpmyadmin/mydb";
         String user = "root";
         String password = "";
 

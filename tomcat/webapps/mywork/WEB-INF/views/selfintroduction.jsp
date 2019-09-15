@@ -23,7 +23,7 @@
         自己紹介</h1>
     
         <h3 style ="background: linear-gradient(transparent 70%, #a7d6ff 70%);">私について</h3>
-        <p><a href="rireki">履歴書(書？)</a></p>
+        <!-- <p><a href="rireki">履歴書(書？)</a></p> -->
         <p><a href="mydates">私について</a></p>
         <br>
         <h3 style ="background: linear-gradient(transparent 70%, #a7d6ff 70%);">学習した言語</h3>

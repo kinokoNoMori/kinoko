@@ -1,0 +1,114 @@
+15-Sep-2019 08:34:24.252 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload Reloading context [/mywork]
+15-Sep-2019 08:34:24.399 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mywork] has started
+15-Sep-2019 08:34:25.714 SEVERE [Catalina-utility-1] org.apache.tomcat.util.digester.Digester.endElement End event threw exception
+	java.lang.reflect.InvocationTargetException
+		at jdk.internal.reflect.GeneratedMethodAccessor67.invoke(Unknown Source)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.tomcat.util.IntrospectionUtils.callMethodN(IntrospectionUtils.java:376)
+		at org.apache.tomcat.util.descriptor.web.CallMethodMultiRule.end(WebRuleSet.java:1045)
+		at org.apache.tomcat.util.digester.Digester.endElement(Digester.java:943)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.endElement(AbstractSAXParser.java:610)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1716)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2881)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:534)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1216)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1431)
+		at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:119)
+		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1117)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:775)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:301)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5048)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3755)
+		at org.apache.catalina.startup.HostConfig.reload(HostConfig.java:1403)
+		at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1376)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1611)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:305)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1144)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1346)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1350)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1328)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+		at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+		at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+	Caused by: java.lang.IllegalArgumentException: The servlets named [CalculatorResult] and [CalculatorResult] are both mapped to the url-pattern [/calculatorresult] which is not permitted
+		at org.apache.tomcat.util.descriptor.web.WebXml.addServletMappingDecoded(WebXml.java:342)
+		at org.apache.tomcat.util.descriptor.web.WebXml.addServletMapping(WebXml.java:335)
+		... 41 more
+15-Sep-2019 08:34:25.802 SEVERE [Catalina-utility-1] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml Parse error in application web.xml file at [file:/home/ubuntu/kinoko/tomcat/webapps/mywork/WEB-INF/web.xml]
+	org.xml.sax.SAXParseException; systemId: file:/home/ubuntu/kinoko/tomcat/webapps/mywork/WEB-INF/web.xml; lineNumber: 193; columnNumber: 23; Error at line [193] column [23]: [The servlets named [CalculatorResult] and [CalculatorResult] are both mapped to the url-pattern [/calculatorresult] which is not permitted]
+		at org.apache.tomcat.util.digester.Digester.createSAXException(Digester.java:1855)
+		at org.apache.tomcat.util.digester.Digester.createSAXException(Digester.java:1887)
+		at org.apache.tomcat.util.digester.Digester.endElement(Digester.java:946)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.endElement(AbstractSAXParser.java:610)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1716)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2881)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:534)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1216)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1431)
+		at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:119)
+		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1117)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:775)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:301)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5048)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3755)
+		at org.apache.catalina.startup.HostConfig.reload(HostConfig.java:1403)
+		at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1376)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1611)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:305)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1144)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1346)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1350)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1328)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+		at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+		at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+	Caused by: java.lang.IllegalArgumentException: The servlets named [CalculatorResult] and [CalculatorResult] are both mapped to the url-pattern [/calculatorresult] which is not permitted
+		at org.apache.tomcat.util.descriptor.web.WebXml.addServletMappingDecoded(WebXml.java:342)
+		at org.apache.tomcat.util.descriptor.web.WebXml.addServletMapping(WebXml.java:335)
+		at jdk.internal.reflect.GeneratedMethodAccessor67.invoke(Unknown Source)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.tomcat.util.IntrospectionUtils.callMethodN(IntrospectionUtils.java:376)
+		at org.apache.tomcat.util.descriptor.web.CallMethodMultiRule.end(WebRuleSet.java:1045)
+		at org.apache.tomcat.util.digester.Digester.endElement(Digester.java:943)
+		... 35 more
+15-Sep-2019 08:34:25.815 SEVERE [Catalina-utility-1] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml Occurred at line [193] column [23]
+15-Sep-2019 08:34:25.920 SEVERE [Catalina-utility-1] org.apache.catalina.startup.ContextConfig.configureStart Marking this application unavailable due to previous error(s)
+15-Sep-2019 08:34:25.931 SEVERE [Catalina-utility-1] org.apache.catalina.core.StandardContext.startInternal One or more components marked the context as not correctly configured
+15-Sep-2019 08:34:25.961 SEVERE [Catalina-utility-1] org.apache.catalina.core.StandardContext.startInternal Context [/mywork] startup failed due to previous errors
+15-Sep-2019 08:34:25.995 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mywork] is completed
+15-Sep-2019 08:34:46.025 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload Reloading context [/mywork]
+15-Sep-2019 09:14:57.964 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload Reloading context [/mywork]
+15-Sep-2019 09:14:58.007 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mywork] has started
+15-Sep-2019 09:14:59.092 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mywork] is completed
+15-Sep-2019 09:56:30.026 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mywork] has started
+15-Sep-2019 09:56:30.769 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mywork] is completed
+15-Sep-2019 09:57:00.783 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mywork] has started
+15-Sep-2019 09:57:01.142 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mywork] is completed
+15-Sep-2019 10:03:51.386 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mywork] has started
+15-Sep-2019 10:03:52.009 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mywork] is completed

@@ -135,6 +135,63 @@
         <url-pattern>/igopyCode</url-pattern>
     </servlet-mapping> 
     
+    <servlet>
+        <servlet-name>ShowForm</servlet-name>
+        <servlet-class>FormServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowForm</servlet-name>
+        <url-pattern>/form</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ShowResult</servlet-name>
+        <servlet-class>ResultServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowResult</servlet-name>
+        <url-pattern>/result</url-pattern>
+    </servlet-mapping>
+    
+    
+    //
+    <servlet>
+        <servlet-name>MemoForm</servlet-name>
+        <servlet-class>MemoForm</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MemoForm</servlet-name>
+        <url-pattern>/memoform</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ResultMemo</servlet-name>
+        <servlet-class>ResultMemo</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ResultMemo</servlet-name>
+        <url-pattern>/memoresult</url-pattern>
+    </servlet-mapping>
+    
+    <!-- 電卓 -->
+    <servlet>
+        <servlet-name>CalcuratorResult</servlet-name>
+        <servlet-class>CalcuratorResult</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CalcuratorResult</servlet-name>
+        <url-pattern>/calcuratorresult</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>CalcuratorForm</servlet-name>
+        <servlet-class>CalcuratorForm</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CalcuratorForm</servlet-name>
+        <url-pattern>/calcuratorform</url-pattern>
+    </servlet-mapping>
+    
     
     <!-- 趣味 -->
     <servlet>
@@ -229,23 +286,7 @@
     </servlet-mapping>    
     
     
-        <servlet>
-        <servlet-name>ShowForm</servlet-name>
-        <servlet-class>FormServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>ShowForm</servlet-name>
-        <url-pattern>/form</url-pattern>
-    </servlet-mapping>
-    
-    <servlet>
-        <servlet-name>ShowResult</servlet-name>
-        <servlet-class>ResultServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>ShowResult</servlet-name>
-        <url-pattern>/result</url-pattern>
-    </servlet-mapping>
+        
     
     
 </web-app>

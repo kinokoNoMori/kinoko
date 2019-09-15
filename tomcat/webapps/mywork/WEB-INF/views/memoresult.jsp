@@ -4,7 +4,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
-        <title>投稿完了</title>
+        <title>書き込み完了</title>
     </head>
     <body style="background:#ffffff">
         <p style="padding: 0.5em;/*文字周りの余白*/
@@ -16,11 +16,13 @@
         <% String message = (String)request.getAttribute("message");%>
         <h1><%= message %></h1>
         <% String article = (String)request.getAttribute("article"); %>
-        <% String userName = (String)request.getAttribute("userName"); %>
+        <% String day = (String)request.getAttribute("day"); %>
+        <% String time = (String)request.getAttribute("time"); %>
         
-        <p>名前:<%= userName %></p>
-        <p>投稿:<%= article %></p>
-        <a href="form">戻る</a></p>
+        <p>日付:<%= day %></p>
+        <p>内容:<%= article %></p>
+        <p>時間:<%= time %></p>
+        <a href="memoform">戻る</a></p>
         <META http-equiv="Refresh" content="1;URL=memoform">
         <br>
         <p style="padding: 0.5em;/*文字周りの余白*/

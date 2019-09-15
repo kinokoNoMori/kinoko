@@ -16,7 +16,7 @@ public class FormServlet extends HttpServlet {
         }
 
         request.setAttribute("articles", articles);
-        request.setAttribute("message", "１行掲示板です！");
+        request.setAttribute("message", "掲示板");
         
         String view = "/WEB-INF/views/form.jsp";
         RequestDispatcher dispatcher = request.getRequestDispatcher(view);
