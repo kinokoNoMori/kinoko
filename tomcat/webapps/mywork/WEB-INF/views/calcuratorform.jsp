@@ -9,6 +9,7 @@
     <body style="background:#ffffff">
         <a name="top"></a>
         
+
         <p style="padding: 0.5em;/*文字周りの余白*/
         color: #494949;/*文字色*/
         background: #fffaf4;/*背景色*/
@@ -19,11 +20,14 @@
         <a href="mylanguages">学習した言語ページ</a>
         <br>
         <a href="#topBoard">~計算機の最上段へ</a><br>
+        </p>
+        
         
         <% String message = (String)request.getAttribute("message");%>
         <h1 style="color: #364e96; padding: 0.5em 0; border-top: solid 3px #364e96; border-bottom: solid 3px #364e96;">
         <%= message %></h1>
         <a name="topBoard"></a>
+        <h2 style ="background: linear-gradient(transparent 70%, #a7d6ff 70%);">計算機</h2>
         <ul>
         <li>0 => +</li>
         <li>1 => -</li>
@@ -50,13 +54,19 @@
         <p></p>
 
         <a href="#topBoard">~<%= message %>の最上段へ</a><br>
+        
         <br>
         <p style="padding: 0.5em;/*文字周りの余白*/
         color: #494949;/*文字色*/
         background: #fffaf4;/*背景色*/
-        border-left: solid 5px #ffaf58;/*左線（実線 太さ 色）*/"><a href="top">総合トップ</a><a>＞</a>
+        border-left: solid 5px #ffaf58;/*左線（実線 太さ 色）*/">
+        <a href="top">総合トップ</a><a>＞</a>
         <a href="mycreature">作成物</a><a>＞</a>
-        <a><%= message %></a><a>＜</a>
-        <a href="mylanguages">学習した言語ページ</a></p><br>
+        <a>計算機</a><a>＜</a>
+        <a href="mylanguages">学習した言語ページ</a>
+        <br>
+        <a href="#topBoard">~計算機の最上段へ</a><br>
+        </p>
+        
     </body>
 </html>

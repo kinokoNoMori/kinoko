@@ -12,7 +12,7 @@ public class MyCreature extends HttpServlet {
             request.setAttribute("igo_py", Igo);
             
             //製作のきっかけ
-            String AA = "　るメモ帳政策の練習・足がかりとして、書いたことが表示される単純な掲示板を作成しようと思った。";
+            String AA = "　メモ帳制作の練習・足がかりとして、書いたことが表示される単純な掲示板を作成しようと思った。";
             request.setAttribute("kikkake_board", AA);
             
             
@@ -67,7 +67,8 @@ public class MyCreature extends HttpServlet {
             
             //電卓制作おいて気をつけたこと
             String D = "　スマホのキーボードから入力すると、演算子を打つためにキーボードの切り替える必要があり、<br>"+
-            "面倒なので数字から演算子を分けられるようにした。";
+            "面倒なので数字から演算子を分けられるようにした。<br>"+
+            "　連続した2回目以降の計算では、前回の結果を用いて計算できるようにした。";
             request.setAttribute("kodawari_cal", D);
             
             

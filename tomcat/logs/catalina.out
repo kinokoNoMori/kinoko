@@ -26893,3 +26893,7 @@ java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
 15-Sep-2019 09:57:01.142 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mywork] is completed
 15-Sep-2019 10:03:51.386 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mywork] has started
 15-Sep-2019 10:03:52.009 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mywork] is completed
+16-Sep-2019 02:33:47.275 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mywork] has started
+16-Sep-2019 02:33:48.124 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mywork] is completed
+16-Sep-2019 02:54:54.782 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mywork] has started
+16-Sep-2019 02:54:55.140 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mywork] is completed
