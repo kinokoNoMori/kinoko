@@ -1,0 +1,101 @@
+18-Sep-2019 11:14:58.884 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.20
+18-Sep-2019 11:14:58.892 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 3 2019 22:26:00 UTC
+18-Sep-2019 11:14:58.892 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.20.0
+18-Sep-2019 11:14:58.892 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+18-Sep-2019 11:14:58.892 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.15.0-45-generic
+18-Sep-2019 11:14:58.893 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+18-Sep-2019 11:14:58.893 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /opt/jdk-11.0.1
+18-Sep-2019 11:14:58.893 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.1+13
+18-Sep-2019 11:14:58.893 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+18-Sep-2019 11:14:58.893 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/ubuntu/kinoko/tomcat
+18-Sep-2019 11:14:58.896 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/ubuntu/kinoko/tomcat
+18-Sep-2019 11:14:58.926 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+18-Sep-2019 11:14:58.926 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+18-Sep-2019 11:14:58.927 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+18-Sep-2019 11:14:58.927 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/ubuntu/kinoko/tomcat/conf/logging.properties
+18-Sep-2019 11:14:58.927 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+18-Sep-2019 11:14:58.927 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+18-Sep-2019 11:14:58.928 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+18-Sep-2019 11:14:58.928 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+18-Sep-2019 11:14:58.929 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+18-Sep-2019 11:14:58.929 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/ubuntu/kinoko/tomcat
+18-Sep-2019 11:14:58.929 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/ubuntu/kinoko/tomcat
+18-Sep-2019 11:14:58.929 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/ubuntu/kinoko/tomcat/temp
+18-Sep-2019 11:14:58.929 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+18-Sep-2019 11:14:59.317 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+18-Sep-2019 11:14:59.383 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+18-Sep-2019 11:14:59.386 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [884] milliseconds
+18-Sep-2019 11:14:59.489 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+18-Sep-2019 11:14:59.489 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.20]
+18-Sep-2019 11:14:59.498 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/home/ubuntu/kinoko/tomcat/conf/Catalina/localhost/mywork.xml]
+18-Sep-2019 11:14:59.901 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/home/ubuntu/kinoko/tomcat/conf/Catalina/localhost/mywork.xml] has finished in [403] ms
+18-Sep-2019 11:14:59.902 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/home/ubuntu/kinoko/tomcat/conf/Catalina/localhost/myform.xml]
+18-Sep-2019 11:14:59.931 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/home/ubuntu/kinoko/tomcat/conf/Catalina/localhost/myform.xml] has finished in [29] ms
+18-Sep-2019 11:14:59.932 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/manager]
+18-Sep-2019 11:14:59.965 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/manager] has finished in [33] ms
+18-Sep-2019 11:14:59.965 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/mybw]
+18-Sep-2019 11:14:59.987 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/mybw] has finished in [22] ms
+18-Sep-2019 11:14:59.988 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/ROOT]
+18-Sep-2019 11:15:00.003 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/ROOT] has finished in [16] ms
+18-Sep-2019 11:15:00.004 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/mybbs]
+18-Sep-2019 11:15:00.024 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/mybbs] has finished in [20] ms
+18-Sep-2019 11:15:00.024 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/docs]
+18-Sep-2019 11:15:00.049 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/docs] has finished in [25] ms
+18-Sep-2019 11:15:00.050 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/host-manager]
+18-Sep-2019 11:15:00.070 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/host-manager] has finished in [20] ms
+18-Sep-2019 11:15:00.071 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/mydatabase]
+18-Sep-2019 11:15:00.256 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+18-Sep-2019 11:15:00.259 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/mydatabase] has finished in [189] ms
+18-Sep-2019 11:15:00.259 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/examples]
+18-Sep-2019 11:15:00.549 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/examples] has finished in [290] ms
+18-Sep-2019 11:15:00.554 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+18-Sep-2019 11:15:00.568 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+18-Sep-2019 11:15:00.574 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1,186] milliseconds
+18-Sep-2019 11:49:51.675 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload Reloading context [/mydatabase]
+18-Sep-2019 11:49:51.680 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mydatabase] has started
+18-Sep-2019 11:49:51.706 WARNING [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [mydatabase] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+18-Sep-2019 11:49:51.708 WARNING [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [mydatabase] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.1/java.lang.Object.wait(Native Method)
+ java.base@11.0.1/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)
+18-Sep-2019 11:49:51.958 INFO [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+18-Sep-2019 11:49:51.964 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mydatabase] is completed
+18-Sep-2019 11:52:12.018 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload Reloading context [/mydatabase]
+18-Sep-2019 11:52:12.018 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mydatabase] has started
+18-Sep-2019 11:52:12.027 WARNING [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [mydatabase] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+18-Sep-2019 11:52:12.028 WARNING [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [mydatabase] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.1/java.lang.Object.wait(Native Method)
+ java.base@11.0.1/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)
+18-Sep-2019 11:52:12.179 INFO [Catalina-utility-2] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+18-Sep-2019 11:52:12.181 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mydatabase] is completed
+18-Sep-2019 11:52:32.190 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload Reloading context [/mydatabase]
+18-Sep-2019 11:52:32.190 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mydatabase] has started
+18-Sep-2019 11:52:32.202 WARNING [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [mydatabase] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+18-Sep-2019 11:52:32.203 WARNING [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [mydatabase] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.1/java.lang.Object.wait(Native Method)
+ java.base@11.0.1/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)
+18-Sep-2019 11:52:32.326 INFO [Catalina-utility-2] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+18-Sep-2019 11:52:32.327 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mydatabase] is completed
+18-Sep-2019 11:53:22.346 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload Reloading context [/mydatabase]
+18-Sep-2019 11:53:22.346 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mydatabase] has started
+18-Sep-2019 11:53:22.350 WARNING [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [mydatabase] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+18-Sep-2019 11:53:22.351 WARNING [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [mydatabase] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.1/java.lang.Object.wait(Native Method)
+ java.base@11.0.1/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)
+18-Sep-2019 11:53:22.474 INFO [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+18-Sep-2019 11:53:22.477 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mydatabase] is completed
+18-Sep-2019 11:58:32.613 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/myform]
+18-Sep-2019 11:58:32.670 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/mydatabase]
+18-Sep-2019 11:58:32.674 WARNING [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [mydatabase] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+18-Sep-2019 11:58:32.675 WARNING [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [mydatabase] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.1/java.lang.Object.wait(Native Method)
+ java.base@11.0.1/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)
+18-Sep-2019 11:58:32.680 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/home/ubuntu/kinoko/tomcat/conf/Catalina/localhost/mydatabase.xml]
+18-Sep-2019 11:58:32.894 INFO [Catalina-utility-2] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+18-Sep-2019 11:58:32.896 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/home/ubuntu/kinoko/tomcat/conf/Catalina/localhost/mydatabase.xml] has finished in [216] ms
+18-Sep-2019 11:58:32.896 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/home/ubuntu/kinoko/tomcat/conf/Catalina/localhost/myform.xml]
+18-Sep-2019 11:58:32.933 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/home/ubuntu/kinoko/tomcat/conf/Catalina/localhost/myform.xml] has finished in [36] ms

@@ -60,7 +60,7 @@ def main():
             non_turn_color = colors[1-turn%2]
             
             print("{0}ターン目,{1}のターンです。".format(turn,turn_color))
-            print("「座標x(横) 座標y(縦)」の順で入力してください")
+            print("「座標x(横) (半角スペース)座標y(縦)」の順で入力してください")
 
             
             #置く位置を入力

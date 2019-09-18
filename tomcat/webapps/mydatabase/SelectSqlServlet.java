@@ -23,7 +23,7 @@ public class SelectSqlServlet extends HttpServlet {
 
         out.println("<p>Hello World!</p>");
 
-        String url = "jdbc:mysql://localhost:3306/phpmyadmin/mydb";
+        String url = "jdbc:mysql://localhost/mydb";
         String user = "root";
         String password = "";
 
@@ -34,15 +34,20 @@ public class SelectSqlServlet extends HttpServlet {
         }
 
         try (Connection connection = DriverManager.getConnection(url, user, password);
-             PreparedStatement statment = connection.prepareStatement("select * from players");
+             PreparedStatement statment = connection.prepareStatement("SELECT * FROM players");
              ResultSet results = statment.executeQuery()) {
-
             out.println("<p>接続成功！</p>");
 
+            while (results.next()) {
+                int id = results.getInt("id");
+                String name = results.getString("name");
+                int level = results.getInt("level");
+                out.println("<p>" + id + ", " + name + ", " + level + "</p>");
+            }
         } catch (Exception e) {
             out.println("Exception" + e.getMessage());
         }
-        out.println("<p>Hello World!</p>");
+
         out.println("</body>");
         out.println("</html>");
     }

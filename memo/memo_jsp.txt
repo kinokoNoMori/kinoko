@@ -60,6 +60,12 @@ javac -classpath "../../lib/servlet-api.jar" -d WEB-INF/classes 作るやつ.jav
 
 ~/views.jspを編集　：　
 
+========================================================================
+更新で反映できるようにするやつ
+tomcat>conf>catalina>localhost>dir名.xml
+に
+<Context
+reloadable="true"/>
 
 
 

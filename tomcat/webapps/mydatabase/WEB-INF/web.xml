@@ -11,7 +11,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>SelectSqlServlet</servlet-name>
-        <url-pattern>/show</url-pattern>
+        <url-pattern>/show4</url-pattern>
     </servlet-mapping>
 
 </web-app>

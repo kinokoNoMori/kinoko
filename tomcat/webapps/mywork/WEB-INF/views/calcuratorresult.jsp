@@ -28,8 +28,6 @@
         <% String ope = (String)request.getAttribute("operator"); %>
         <% String yy = (String)request.getAttribute("y"); %>
         
-        <h1><%= xx %></h1>
-        
         <% 
         double a = Double.parseDouble(xx);
         double b = Double.parseDouble(yy);
@@ -64,7 +62,7 @@
         <%= ans %>
         </h2>
         <a href="#topBoard">~~計算を続ける</a>
-        <a href="calcuratorform">~~計算機に戻る</a></p>
+        <a href="calcuratorform">~~結果をリセット</a></p>
         
         <!-- -->
         <a name="topBoard"></a>
