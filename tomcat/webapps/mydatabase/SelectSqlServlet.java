@@ -17,7 +17,7 @@ public class SelectSqlServlet extends HttpServlet {
 
         out.println("<html>");
         out.println("<head>");
-        out.println("<title>Java - paiza</title>");
+        out.println("<title>Java to sql</title>");
         out.println("</head>");
         out.println("<body>");
 
@@ -34,8 +34,8 @@ public class SelectSqlServlet extends HttpServlet {
         }
 
         try (Connection connection = DriverManager.getConnection(url, user, password);
-             PreparedStatement statment = connection.prepareStatement("SELECT * FROM players");
-             ResultSet results = statment.executeQuery()) {
+            PreparedStatement statment = connection.prepareStatement("SELECT * FROM players");
+            ResultSet results = statment.executeQuery()) {
             out.println("<p>接続成功！</p>");
 
             while (results.next()) {

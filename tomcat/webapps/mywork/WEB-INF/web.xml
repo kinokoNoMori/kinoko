@@ -205,8 +205,15 @@
     
     
     
-    
-    
+    <!-- SQL -->
+    <servlet>
+        <servlet-name>SelectSqlServlet</servlet-name>
+        <servlet-class>SelectSqlServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SelectSqlServlet</servlet-name>
+        <url-pattern>/showsql</url-pattern>
+    </servlet-mapping>
     
     
     
