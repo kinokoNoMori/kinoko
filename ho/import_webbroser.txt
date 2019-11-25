@@ -1,0 +1,8 @@
+https://qiita.com/fujigaki/items/db8a97c4a679ba1e3208
+#XPath
+'''
+コメント内容
+/html/body/div[1]/div[13]/div[2]/form/p/textarea
+書き込む牡丹
+/html/body/div[1]/div[13]/div[2]/form/p/input[6]
+'''

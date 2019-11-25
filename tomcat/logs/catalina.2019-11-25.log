@@ -1,0 +1,798 @@
+25-Nov-2019 07:31:13.069 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.20
+25-Nov-2019 07:31:13.074 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 3 2019 22:26:00 UTC
+25-Nov-2019 07:31:13.074 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.20.0
+25-Nov-2019 07:31:13.075 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+25-Nov-2019 07:31:13.075 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.15.0-45-generic
+25-Nov-2019 07:31:13.075 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+25-Nov-2019 07:31:13.076 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /opt/jdk-11.0.1
+25-Nov-2019 07:31:13.076 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.1+13
+25-Nov-2019 07:31:13.076 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+25-Nov-2019 07:31:13.076 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/ubuntu/kinoko/tomcat
+25-Nov-2019 07:31:13.077 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/ubuntu/kinoko/tomcat
+25-Nov-2019 07:31:13.108 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+25-Nov-2019 07:31:13.109 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+25-Nov-2019 07:31:13.109 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+25-Nov-2019 07:31:13.109 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/ubuntu/kinoko/tomcat/conf/logging.properties
+25-Nov-2019 07:31:13.109 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+25-Nov-2019 07:31:13.110 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+25-Nov-2019 07:31:13.110 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+25-Nov-2019 07:31:13.110 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+25-Nov-2019 07:31:13.110 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+25-Nov-2019 07:31:13.111 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/ubuntu/kinoko/tomcat
+25-Nov-2019 07:31:13.111 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/ubuntu/kinoko/tomcat
+25-Nov-2019 07:31:13.111 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/ubuntu/kinoko/tomcat/temp
+25-Nov-2019 07:31:13.112 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+25-Nov-2019 07:31:13.492 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+25-Nov-2019 07:31:13.522 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector[HTTP/1.1-8080]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:983)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:533)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1059)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:584)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:607)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:304)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:474)
+	Caused by: java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:461)
+		at java.base/sun.nio.ch.Net.bind(Net.java:453)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+		at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:248)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:222)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1119)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1132)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:557)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:74)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:980)
+		... 13 more
+25-Nov-2019 07:31:13.524 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+25-Nov-2019 07:31:13.525 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector[AJP/1.3-8009]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:983)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:533)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1059)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:584)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:607)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:304)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:474)
+	Caused by: java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:461)
+		at java.base/sun.nio.ch.Net.bind(Net.java:453)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+		at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:248)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:222)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1119)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1132)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:557)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:980)
+		... 13 more
+25-Nov-2019 07:31:13.529 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [807] milliseconds
+25-Nov-2019 07:31:13.605 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+25-Nov-2019 07:31:13.605 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.20]
+25-Nov-2019 07:31:13.613 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/home/ubuntu/kinoko/tomcat/conf/Catalina/localhost/mywork.xml]
+25-Nov-2019 07:31:14.065 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+25-Nov-2019 07:31:14.125 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/home/ubuntu/kinoko/tomcat/conf/Catalina/localhost/mywork.xml] has finished in [513] ms
+25-Nov-2019 07:31:14.126 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/home/ubuntu/kinoko/tomcat/conf/Catalina/localhost/mydatabase.xml]
+25-Nov-2019 07:31:14.323 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+25-Nov-2019 07:31:14.326 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/home/ubuntu/kinoko/tomcat/conf/Catalina/localhost/mydatabase.xml] has finished in [201] ms
+25-Nov-2019 07:31:14.327 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/home/ubuntu/kinoko/tomcat/conf/Catalina/localhost/myform.xml]
+25-Nov-2019 07:31:14.386 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/home/ubuntu/kinoko/tomcat/conf/Catalina/localhost/myform.xml] has finished in [58] ms
+25-Nov-2019 07:31:14.388 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/manager]
+25-Nov-2019 07:31:14.420 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/manager] has finished in [32] ms
+25-Nov-2019 07:31:14.420 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/mybw]
+25-Nov-2019 07:31:14.440 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/mybw] has finished in [20] ms
+25-Nov-2019 07:31:14.441 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/ROOT]
+25-Nov-2019 07:31:14.455 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/ROOT] has finished in [14] ms
+25-Nov-2019 07:31:14.455 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/mybbs]
+25-Nov-2019 07:31:14.475 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/mybbs] has finished in [19] ms
+25-Nov-2019 07:31:14.475 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/docs]
+25-Nov-2019 07:31:14.490 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/docs] has finished in [15] ms
+25-Nov-2019 07:31:14.491 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/host-manager]
+25-Nov-2019 07:31:14.508 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/host-manager] has finished in [18] ms
+25-Nov-2019 07:31:14.508 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/examples]
+25-Nov-2019 07:31:14.776 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/examples] has finished in [267] ms
+25-Nov-2019 07:31:14.781 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1,251] milliseconds
+25-Nov-2019 07:31:14.787 SEVERE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use (Bind failed)
+		at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+		at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:381)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:243)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:584)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:721)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:667)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:344)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:475)
+25-Nov-2019 07:31:14.787 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+25-Nov-2019 07:31:14.788 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+25-Nov-2019 07:31:14.788 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+25-Nov-2019 07:31:14.823 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+25-Nov-2019 07:31:14.823 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+25-Nov-2019 07:31:14.823 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+25-Nov-2019 07:31:14.824 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+25-Nov-2019 07:31:50.656 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.20
+25-Nov-2019 07:31:50.659 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 3 2019 22:26:00 UTC
+25-Nov-2019 07:31:50.660 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.20.0
+25-Nov-2019 07:31:50.661 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+25-Nov-2019 07:31:50.661 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.15.0-45-generic
+25-Nov-2019 07:31:50.661 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+25-Nov-2019 07:31:50.661 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /opt/jdk-11.0.1
+25-Nov-2019 07:31:50.661 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.1+13
+25-Nov-2019 07:31:50.661 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+25-Nov-2019 07:31:50.661 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/ubuntu/kinoko/tomcat
+25-Nov-2019 07:31:50.661 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/ubuntu/kinoko/tomcat
+25-Nov-2019 07:31:50.671 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+25-Nov-2019 07:31:50.671 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+25-Nov-2019 07:31:50.671 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+25-Nov-2019 07:31:50.671 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/ubuntu/kinoko/tomcat/conf/logging.properties
+25-Nov-2019 07:31:50.672 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+25-Nov-2019 07:31:50.672 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+25-Nov-2019 07:31:50.672 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+25-Nov-2019 07:31:50.672 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+25-Nov-2019 07:31:50.672 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+25-Nov-2019 07:31:50.672 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/ubuntu/kinoko/tomcat
+25-Nov-2019 07:31:50.672 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/ubuntu/kinoko/tomcat
+25-Nov-2019 07:31:50.673 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/ubuntu/kinoko/tomcat/temp
+25-Nov-2019 07:31:50.673 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+25-Nov-2019 07:31:50.906 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+25-Nov-2019 07:31:50.921 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector[HTTP/1.1-8080]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:983)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:533)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1059)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:584)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:607)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:304)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:474)
+	Caused by: java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:461)
+		at java.base/sun.nio.ch.Net.bind(Net.java:453)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+		at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:248)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:222)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1119)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1132)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:557)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:74)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:980)
+		... 13 more
+25-Nov-2019 07:31:50.922 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+25-Nov-2019 07:31:50.924 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector[AJP/1.3-8009]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:983)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:533)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1059)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:584)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:607)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:304)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:474)
+	Caused by: java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:461)
+		at java.base/sun.nio.ch.Net.bind(Net.java:453)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+		at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:248)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:222)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1119)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1132)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:557)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:980)
+		... 13 more
+25-Nov-2019 07:31:50.925 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [463] milliseconds
+25-Nov-2019 07:31:50.975 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+25-Nov-2019 07:31:50.976 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.20]
+25-Nov-2019 07:31:50.982 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/home/ubuntu/kinoko/tomcat/conf/Catalina/localhost/mywork.xml]
+25-Nov-2019 07:31:51.402 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+25-Nov-2019 07:31:51.441 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/home/ubuntu/kinoko/tomcat/conf/Catalina/localhost/mywork.xml] has finished in [459] ms
+25-Nov-2019 07:31:51.441 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/home/ubuntu/kinoko/tomcat/conf/Catalina/localhost/mydatabase.xml]
+25-Nov-2019 07:31:51.567 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+25-Nov-2019 07:31:51.570 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/home/ubuntu/kinoko/tomcat/conf/Catalina/localhost/mydatabase.xml] has finished in [128] ms
+25-Nov-2019 07:31:51.570 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/home/ubuntu/kinoko/tomcat/conf/Catalina/localhost/myform.xml]
+25-Nov-2019 07:31:51.594 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/home/ubuntu/kinoko/tomcat/conf/Catalina/localhost/myform.xml] has finished in [23] ms
+25-Nov-2019 07:31:51.595 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/manager]
+25-Nov-2019 07:31:51.624 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/manager] has finished in [29] ms
+25-Nov-2019 07:31:51.625 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/mybw]
+25-Nov-2019 07:31:51.642 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/mybw] has finished in [17] ms
+25-Nov-2019 07:31:51.643 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/ROOT]
+25-Nov-2019 07:31:51.675 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/ROOT] has finished in [33] ms
+25-Nov-2019 07:31:51.676 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/mybbs]
+25-Nov-2019 07:31:51.693 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/mybbs] has finished in [17] ms
+25-Nov-2019 07:31:51.694 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/docs]
+25-Nov-2019 07:31:51.708 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/docs] has finished in [15] ms
+25-Nov-2019 07:31:51.708 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/host-manager]
+25-Nov-2019 07:31:51.724 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/host-manager] has finished in [16] ms
+25-Nov-2019 07:31:51.725 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/examples]
+25-Nov-2019 07:31:51.901 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/examples] has finished in [176] ms
+25-Nov-2019 07:31:51.905 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [979] milliseconds
+25-Nov-2019 07:31:51.908 SEVERE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use (Bind failed)
+		at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+		at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:381)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:243)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:584)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:721)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:667)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:344)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:475)
+25-Nov-2019 07:31:51.909 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+25-Nov-2019 07:31:51.909 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+25-Nov-2019 07:31:51.909 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+25-Nov-2019 07:31:51.938 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+25-Nov-2019 07:31:51.938 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+25-Nov-2019 07:31:51.939 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+25-Nov-2019 07:31:51.939 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+25-Nov-2019 07:32:07.805 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.20
+25-Nov-2019 07:32:07.814 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 3 2019 22:26:00 UTC
+25-Nov-2019 07:32:07.814 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.20.0
+25-Nov-2019 07:32:07.814 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+25-Nov-2019 07:32:07.814 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.15.0-45-generic
+25-Nov-2019 07:32:07.814 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+25-Nov-2019 07:32:07.814 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /opt/jdk-11.0.1
+25-Nov-2019 07:32:07.815 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.1+13
+25-Nov-2019 07:32:07.815 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+25-Nov-2019 07:32:07.815 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/ubuntu/kinoko/tomcat
+25-Nov-2019 07:32:07.815 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/ubuntu/kinoko/tomcat
+25-Nov-2019 07:32:07.823 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+25-Nov-2019 07:32:07.824 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+25-Nov-2019 07:32:07.824 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+25-Nov-2019 07:32:07.824 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/ubuntu/kinoko/tomcat/conf/logging.properties
+25-Nov-2019 07:32:07.824 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+25-Nov-2019 07:32:07.824 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+25-Nov-2019 07:32:07.824 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+25-Nov-2019 07:32:07.824 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+25-Nov-2019 07:32:07.825 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+25-Nov-2019 07:32:07.825 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/ubuntu/kinoko/tomcat
+25-Nov-2019 07:32:07.825 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/ubuntu/kinoko/tomcat
+25-Nov-2019 07:32:07.825 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/ubuntu/kinoko/tomcat/temp
+25-Nov-2019 07:32:07.825 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+25-Nov-2019 07:32:08.076 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+25-Nov-2019 07:32:08.090 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector[HTTP/1.1-8080]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:983)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:533)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1059)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:584)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:607)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:304)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:474)
+	Caused by: java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:461)
+		at java.base/sun.nio.ch.Net.bind(Net.java:453)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+		at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:248)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:222)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1119)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1132)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:557)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:74)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:980)
+		... 13 more
+25-Nov-2019 07:32:08.092 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+25-Nov-2019 07:32:08.093 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector[AJP/1.3-8009]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:983)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:533)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1059)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:584)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:607)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:304)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:474)
+	Caused by: java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:461)
+		at java.base/sun.nio.ch.Net.bind(Net.java:453)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+		at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:248)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:222)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1119)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1132)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:557)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:980)
+		... 13 more
+25-Nov-2019 07:32:08.094 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [484] milliseconds
+25-Nov-2019 07:32:08.141 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+25-Nov-2019 07:32:08.141 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.20]
+25-Nov-2019 07:32:08.147 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/home/ubuntu/kinoko/tomcat/conf/Catalina/localhost/mywork.xml]
+25-Nov-2019 07:32:08.482 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+25-Nov-2019 07:32:08.514 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/home/ubuntu/kinoko/tomcat/conf/Catalina/localhost/mywork.xml] has finished in [366] ms
+25-Nov-2019 07:32:08.514 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/home/ubuntu/kinoko/tomcat/conf/Catalina/localhost/mydatabase.xml]
+25-Nov-2019 07:32:08.619 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+25-Nov-2019 07:32:08.621 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/home/ubuntu/kinoko/tomcat/conf/Catalina/localhost/mydatabase.xml] has finished in [107] ms
+25-Nov-2019 07:32:08.621 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/home/ubuntu/kinoko/tomcat/conf/Catalina/localhost/myform.xml]
+25-Nov-2019 07:32:08.639 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/home/ubuntu/kinoko/tomcat/conf/Catalina/localhost/myform.xml] has finished in [18] ms
+25-Nov-2019 07:32:08.640 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/manager]
+25-Nov-2019 07:32:08.670 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/manager] has finished in [29] ms
+25-Nov-2019 07:32:08.670 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/mybw]
+25-Nov-2019 07:32:08.686 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/mybw] has finished in [16] ms
+25-Nov-2019 07:32:08.686 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/ROOT]
+25-Nov-2019 07:32:08.710 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/ROOT] has finished in [24] ms
+25-Nov-2019 07:32:08.710 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/mybbs]
+25-Nov-2019 07:32:08.726 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/mybbs] has finished in [16] ms
+25-Nov-2019 07:32:08.726 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/docs]
+25-Nov-2019 07:32:08.740 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/docs] has finished in [14] ms
+25-Nov-2019 07:32:08.740 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/host-manager]
+25-Nov-2019 07:32:08.755 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/host-manager] has finished in [15] ms
+25-Nov-2019 07:32:08.756 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/examples]
+25-Nov-2019 07:32:08.942 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/examples] has finished in [185] ms
+25-Nov-2019 07:32:08.946 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [851] milliseconds
+25-Nov-2019 07:32:08.949 SEVERE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use (Bind failed)
+		at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+		at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:381)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:243)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:584)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:721)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:667)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:344)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:475)
+25-Nov-2019 07:32:08.950 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+25-Nov-2019 07:32:08.950 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+25-Nov-2019 07:32:08.950 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+25-Nov-2019 07:32:08.976 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+25-Nov-2019 07:32:08.977 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+25-Nov-2019 07:32:08.977 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+25-Nov-2019 07:32:08.977 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+25-Nov-2019 07:33:55.941 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.20
+25-Nov-2019 07:33:55.945 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 3 2019 22:26:00 UTC
+25-Nov-2019 07:33:55.945 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.20.0
+25-Nov-2019 07:33:55.945 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+25-Nov-2019 07:33:55.945 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.15.0-45-generic
+25-Nov-2019 07:33:55.946 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+25-Nov-2019 07:33:55.946 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /opt/jdk-11.0.1
+25-Nov-2019 07:33:55.946 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.1+13
+25-Nov-2019 07:33:55.946 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+25-Nov-2019 07:33:55.946 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/ubuntu/kinoko/tomcat
+25-Nov-2019 07:33:55.946 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/ubuntu/kinoko/tomcat
+25-Nov-2019 07:33:55.958 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+25-Nov-2019 07:33:55.958 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+25-Nov-2019 07:33:55.959 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+25-Nov-2019 07:33:55.959 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/ubuntu/kinoko/tomcat/conf/logging.properties
+25-Nov-2019 07:33:55.959 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+25-Nov-2019 07:33:55.959 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+25-Nov-2019 07:33:55.959 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+25-Nov-2019 07:33:55.959 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+25-Nov-2019 07:33:55.959 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+25-Nov-2019 07:33:55.959 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/ubuntu/kinoko/tomcat
+25-Nov-2019 07:33:55.960 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/ubuntu/kinoko/tomcat
+25-Nov-2019 07:33:55.960 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/ubuntu/kinoko/tomcat/temp
+25-Nov-2019 07:33:55.960 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+25-Nov-2019 07:33:56.212 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+25-Nov-2019 07:33:56.226 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector[HTTP/1.1-8080]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:983)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:533)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1059)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:584)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:607)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:304)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:474)
+	Caused by: java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:461)
+		at java.base/sun.nio.ch.Net.bind(Net.java:453)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+		at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:248)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:222)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1119)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1132)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:557)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:74)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:980)
+		... 13 more
+25-Nov-2019 07:33:56.228 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+25-Nov-2019 07:33:56.230 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector[AJP/1.3-8009]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:983)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:533)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1059)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:584)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:607)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:304)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:474)
+	Caused by: java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:461)
+		at java.base/sun.nio.ch.Net.bind(Net.java:453)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+		at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:248)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:222)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1119)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1132)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:557)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:980)
+		... 13 more
+25-Nov-2019 07:33:56.231 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [490] milliseconds
+25-Nov-2019 07:33:56.289 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+25-Nov-2019 07:33:56.290 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.20]
+25-Nov-2019 07:33:56.297 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/home/ubuntu/kinoko/tomcat/conf/Catalina/localhost/mywork.xml]
+25-Nov-2019 07:33:56.646 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+25-Nov-2019 07:33:56.687 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/home/ubuntu/kinoko/tomcat/conf/Catalina/localhost/mywork.xml] has finished in [390] ms
+25-Nov-2019 07:33:56.688 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/home/ubuntu/kinoko/tomcat/conf/Catalina/localhost/mydatabase.xml]
+25-Nov-2019 07:33:56.803 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+25-Nov-2019 07:33:56.804 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/home/ubuntu/kinoko/tomcat/conf/Catalina/localhost/mydatabase.xml] has finished in [116] ms
+25-Nov-2019 07:33:56.805 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/home/ubuntu/kinoko/tomcat/conf/Catalina/localhost/myform.xml]
+25-Nov-2019 07:33:56.824 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/home/ubuntu/kinoko/tomcat/conf/Catalina/localhost/myform.xml] has finished in [19] ms
+25-Nov-2019 07:33:56.825 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/manager]
+25-Nov-2019 07:33:56.886 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/manager] has finished in [62] ms
+25-Nov-2019 07:33:56.887 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/mybw]
+25-Nov-2019 07:33:56.905 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/mybw] has finished in [18] ms
+25-Nov-2019 07:33:56.905 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/ROOT]
+25-Nov-2019 07:33:56.921 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/ROOT] has finished in [15] ms
+25-Nov-2019 07:33:56.921 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/mybbs]
+25-Nov-2019 07:33:56.938 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/mybbs] has finished in [17] ms
+25-Nov-2019 07:33:56.939 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/docs]
+25-Nov-2019 07:33:56.954 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/docs] has finished in [15] ms
+25-Nov-2019 07:33:56.955 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/host-manager]
+25-Nov-2019 07:33:56.971 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/host-manager] has finished in [16] ms
+25-Nov-2019 07:33:56.972 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/examples]
+25-Nov-2019 07:33:57.169 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/examples] has finished in [197] ms
+25-Nov-2019 07:33:57.185 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [953] milliseconds
+25-Nov-2019 07:33:57.191 SEVERE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use (Bind failed)
+		at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+		at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:381)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:243)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:584)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:721)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:667)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:344)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:475)
+25-Nov-2019 07:33:57.192 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+25-Nov-2019 07:33:57.193 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+25-Nov-2019 07:33:57.193 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+25-Nov-2019 07:33:57.239 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+25-Nov-2019 07:33:57.239 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+25-Nov-2019 07:33:57.240 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+25-Nov-2019 07:33:57.240 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+25-Nov-2019 07:34:53.181 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.20
+25-Nov-2019 07:34:53.186 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 3 2019 22:26:00 UTC
+25-Nov-2019 07:34:53.186 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.20.0
+25-Nov-2019 07:34:53.186 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+25-Nov-2019 07:34:53.187 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.15.0-45-generic
+25-Nov-2019 07:34:53.187 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+25-Nov-2019 07:34:53.187 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /opt/jdk-11.0.1
+25-Nov-2019 07:34:53.187 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.1+13
+25-Nov-2019 07:34:53.187 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+25-Nov-2019 07:34:53.187 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/ubuntu/kinoko/tomcat
+25-Nov-2019 07:34:53.187 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/ubuntu/kinoko/tomcat
+25-Nov-2019 07:34:53.203 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+25-Nov-2019 07:34:53.203 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+25-Nov-2019 07:34:53.203 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+25-Nov-2019 07:34:53.203 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/ubuntu/kinoko/tomcat/conf/logging.properties
+25-Nov-2019 07:34:53.203 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+25-Nov-2019 07:34:53.203 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+25-Nov-2019 07:34:53.204 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+25-Nov-2019 07:34:53.204 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+25-Nov-2019 07:34:53.204 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+25-Nov-2019 07:34:53.204 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/ubuntu/kinoko/tomcat
+25-Nov-2019 07:34:53.204 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/ubuntu/kinoko/tomcat
+25-Nov-2019 07:34:53.204 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/ubuntu/kinoko/tomcat/temp
+25-Nov-2019 07:34:53.204 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+25-Nov-2019 07:34:53.463 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+25-Nov-2019 07:34:53.478 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector[HTTP/1.1-8080]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:983)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:533)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1059)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:584)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:607)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:304)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:474)
+	Caused by: java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:461)
+		at java.base/sun.nio.ch.Net.bind(Net.java:453)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+		at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:248)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:222)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1119)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1132)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:557)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:74)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:980)
+		... 13 more
+25-Nov-2019 07:34:53.480 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+25-Nov-2019 07:34:53.482 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector[AJP/1.3-8009]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:983)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:533)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1059)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:584)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:607)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:304)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:474)
+	Caused by: java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:461)
+		at java.base/sun.nio.ch.Net.bind(Net.java:453)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+		at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:248)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:222)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1119)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1132)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:557)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:980)
+		... 13 more
+25-Nov-2019 07:34:53.483 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [516] milliseconds
+25-Nov-2019 07:34:53.533 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+25-Nov-2019 07:34:53.533 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.20]
+25-Nov-2019 07:34:53.540 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/home/ubuntu/kinoko/tomcat/conf/Catalina/localhost/mywork.xml]
+25-Nov-2019 07:34:53.872 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+25-Nov-2019 07:34:53.905 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/home/ubuntu/kinoko/tomcat/conf/Catalina/localhost/mywork.xml] has finished in [365] ms
+25-Nov-2019 07:34:53.905 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/home/ubuntu/kinoko/tomcat/conf/Catalina/localhost/mydatabase.xml]
+25-Nov-2019 07:34:54.008 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+25-Nov-2019 07:34:54.009 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/home/ubuntu/kinoko/tomcat/conf/Catalina/localhost/mydatabase.xml] has finished in [104] ms
+25-Nov-2019 07:34:54.010 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/home/ubuntu/kinoko/tomcat/conf/Catalina/localhost/myform.xml]
+25-Nov-2019 07:34:54.029 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/home/ubuntu/kinoko/tomcat/conf/Catalina/localhost/myform.xml] has finished in [20] ms
+25-Nov-2019 07:34:54.030 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/manager]
+25-Nov-2019 07:34:54.065 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/manager] has finished in [35] ms
+25-Nov-2019 07:34:54.066 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/mybw]
+25-Nov-2019 07:34:54.083 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/mybw] has finished in [17] ms
+25-Nov-2019 07:34:54.083 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/ROOT]
+25-Nov-2019 07:34:54.099 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/ROOT] has finished in [15] ms
+25-Nov-2019 07:34:54.099 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/mybbs]
+25-Nov-2019 07:34:54.116 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/mybbs] has finished in [17] ms
+25-Nov-2019 07:34:54.116 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/docs]
+25-Nov-2019 07:34:54.132 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/docs] has finished in [16] ms
+25-Nov-2019 07:34:54.132 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/host-manager]
+25-Nov-2019 07:34:54.149 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/host-manager] has finished in [17] ms
+25-Nov-2019 07:34:54.150 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/examples]
+25-Nov-2019 07:34:54.350 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/examples] has finished in [201] ms
+25-Nov-2019 07:34:54.361 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [877] milliseconds
+25-Nov-2019 07:34:54.365 SEVERE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use (Bind failed)
+		at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+		at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:381)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:243)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:584)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:721)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:667)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:344)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:475)
+25-Nov-2019 07:34:54.365 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+25-Nov-2019 07:34:54.365 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+25-Nov-2019 07:34:54.366 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+25-Nov-2019 07:34:54.393 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+25-Nov-2019 07:34:54.394 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+25-Nov-2019 07:34:54.394 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+25-Nov-2019 07:34:54.394 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+25-Nov-2019 07:38:12.206 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.20
+25-Nov-2019 07:38:12.210 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 3 2019 22:26:00 UTC
+25-Nov-2019 07:38:12.210 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.20.0
+25-Nov-2019 07:38:12.210 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+25-Nov-2019 07:38:12.210 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.15.0-45-generic
+25-Nov-2019 07:38:12.210 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+25-Nov-2019 07:38:12.210 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /opt/jdk-11.0.1
+25-Nov-2019 07:38:12.216 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.1+13
+25-Nov-2019 07:38:12.216 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+25-Nov-2019 07:38:12.216 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/ubuntu/kinoko/tomcat
+25-Nov-2019 07:38:12.216 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/ubuntu/kinoko/tomcat
+25-Nov-2019 07:38:12.225 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+25-Nov-2019 07:38:12.226 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+25-Nov-2019 07:38:12.226 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+25-Nov-2019 07:38:12.226 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/ubuntu/kinoko/tomcat/conf/logging.properties
+25-Nov-2019 07:38:12.226 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+25-Nov-2019 07:38:12.226 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+25-Nov-2019 07:38:12.226 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+25-Nov-2019 07:38:12.226 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+25-Nov-2019 07:38:12.227 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+25-Nov-2019 07:38:12.227 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/ubuntu/kinoko/tomcat
+25-Nov-2019 07:38:12.227 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/ubuntu/kinoko/tomcat
+25-Nov-2019 07:38:12.227 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/ubuntu/kinoko/tomcat/temp
+25-Nov-2019 07:38:12.227 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+25-Nov-2019 07:38:12.481 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+25-Nov-2019 07:38:12.496 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector[HTTP/1.1-8080]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:983)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:533)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1059)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:584)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:607)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:304)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:474)
+	Caused by: java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:461)
+		at java.base/sun.nio.ch.Net.bind(Net.java:453)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+		at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:248)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:222)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1119)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1132)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:557)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:74)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:980)
+		... 13 more
+25-Nov-2019 07:38:12.497 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+25-Nov-2019 07:38:12.498 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector[AJP/1.3-8009]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:983)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:533)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1059)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:584)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:607)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:304)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:474)
+	Caused by: java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:461)
+		at java.base/sun.nio.ch.Net.bind(Net.java:453)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+		at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:248)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:222)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1119)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1132)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:557)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:980)
+		... 13 more
+25-Nov-2019 07:38:12.499 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [481] milliseconds
+25-Nov-2019 07:38:12.564 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+25-Nov-2019 07:38:12.564 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.20]
+25-Nov-2019 07:38:12.574 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/home/ubuntu/kinoko/tomcat/conf/Catalina/localhost/mywork.xml]
+25-Nov-2019 07:38:12.917 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+25-Nov-2019 07:38:12.949 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/home/ubuntu/kinoko/tomcat/conf/Catalina/localhost/mywork.xml] has finished in [375] ms
+25-Nov-2019 07:38:12.950 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/home/ubuntu/kinoko/tomcat/conf/Catalina/localhost/mydatabase.xml]
+25-Nov-2019 07:38:13.056 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+25-Nov-2019 07:38:13.058 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/home/ubuntu/kinoko/tomcat/conf/Catalina/localhost/mydatabase.xml] has finished in [108] ms
+25-Nov-2019 07:38:13.058 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/home/ubuntu/kinoko/tomcat/conf/Catalina/localhost/myform.xml]
+25-Nov-2019 07:38:13.078 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/home/ubuntu/kinoko/tomcat/conf/Catalina/localhost/myform.xml] has finished in [20] ms
+25-Nov-2019 07:38:13.079 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/manager]
+25-Nov-2019 07:38:13.122 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/manager] has finished in [42] ms
+25-Nov-2019 07:38:13.122 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/mybw]
+25-Nov-2019 07:38:13.140 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/mybw] has finished in [18] ms
+25-Nov-2019 07:38:13.140 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/ROOT]
+25-Nov-2019 07:38:13.155 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/ROOT] has finished in [14] ms
+25-Nov-2019 07:38:13.155 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/mybbs]
+25-Nov-2019 07:38:13.172 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/mybbs] has finished in [16] ms
+25-Nov-2019 07:38:13.172 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/docs]
+25-Nov-2019 07:38:13.186 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/docs] has finished in [14] ms
+25-Nov-2019 07:38:13.186 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/host-manager]
+25-Nov-2019 07:38:13.203 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/host-manager] has finished in [17] ms
+25-Nov-2019 07:38:13.203 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/examples]
+25-Nov-2019 07:38:13.399 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/examples] has finished in [195] ms
+25-Nov-2019 07:38:13.403 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [903] milliseconds
+25-Nov-2019 07:38:13.406 SEVERE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use (Bind failed)
+		at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+		at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:381)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:243)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:584)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:721)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:667)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:344)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:475)
+25-Nov-2019 07:38:13.407 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+25-Nov-2019 07:38:13.407 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+25-Nov-2019 07:38:13.407 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+25-Nov-2019 07:38:13.435 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+25-Nov-2019 07:38:13.435 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+25-Nov-2019 07:38:13.436 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+25-Nov-2019 07:38:13.436 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]

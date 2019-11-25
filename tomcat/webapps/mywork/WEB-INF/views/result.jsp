@@ -21,7 +21,7 @@
         <p>名前:<%= userName %></p>
         <p>投稿:<%= article %></p>
         <a href="form">戻る</a></p>
-        <META http-equiv="Refresh" content="1;URL=memoform">
+        <META http-equiv="Refresh" content="1;URL=form">
         <br>
         <p style="padding: 0.5em;/*文字周りの余白*/
         color: #494949;/*文字色*/

@@ -36,10 +36,11 @@
         } %>
         <p><%= hello %>、私のウェブページへようこそ</p>
         
-        
+        <!--
         <h3 style ="background: linear-gradient(transparent 70%, #a7d6ff 70%);">個人的なもの</h3>
         <p><a href="selfintroduction">自己紹介</a></p>
         <br>
+        -->
         <h3 style ="background: linear-gradient(transparent 70%, #a7d6ff 70%);">作成物</h3>
         <p><a href="mycreature">作成物</a></p>
         

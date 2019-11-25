@@ -1,0 +1,7 @@
+172.22.0.1 - - [07/Nov/2019:22:22:54 +0000] "GET /mywork/top HTTP/1.1" 200 1273
+172.22.0.1 - - [07/Nov/2019:22:22:54 +0000] "GET /apple-touch-icon-120x120-precomposed.png HTTP/1.1" 404 1114
+172.22.0.1 - - [07/Nov/2019:22:22:54 +0000] "GET /apple-touch-icon-120x120.png HTTP/1.1" 404 1102
+172.22.0.1 - - [07/Nov/2019:22:22:54 +0000] "GET /apple-touch-icon.png HTTP/1.1" 404 1094
+172.22.0.1 - - [07/Nov/2019:22:22:54 +0000] "GET /apple-touch-icon.png HTTP/1.1" 404 1094
+172.22.0.1 - - [07/Nov/2019:22:22:57 +0000] "GET /mywork/mycreature HTTP/1.1" 200 6397
+172.22.0.1 - - [07/Nov/2019:22:22:57 +0000] "GET /favicon.ico HTTP/1.1" 200 21630

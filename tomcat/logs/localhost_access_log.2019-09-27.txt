@@ -1,0 +1,17 @@
+172.22.0.1 - - [27/Sep/2019:08:24:40 +0000] "GET /mywork/calcuratorform HTTP/1.1" 200 2429
+172.22.0.1 - - [27/Sep/2019:08:24:41 +0000] "GET /apple-touch-icon-120x120-precomposed.png HTTP/1.1" 404 1114
+172.22.0.1 - - [27/Sep/2019:08:24:41 +0000] "GET /apple-touch-icon-120x120.png HTTP/1.1" 404 1102
+172.22.0.1 - - [27/Sep/2019:08:24:41 +0000] "GET /apple-touch-icon.png HTTP/1.1" 404 1094
+172.22.0.1 - - [27/Sep/2019:08:24:41 +0000] "GET /apple-touch-icon.png HTTP/1.1" 404 1094
+172.22.0.1 - - [27/Sep/2019:08:24:44 +0000] "GET /mywork/top HTTP/1.1" 200 1261
+172.22.0.1 - - [27/Sep/2019:08:24:44 +0000] "GET /apple-touch-icon-120x120-precomposed.png HTTP/1.1" 404 1114
+172.22.0.1 - - [27/Sep/2019:08:24:44 +0000] "GET /apple-touch-icon-120x120.png HTTP/1.1" 404 1102
+172.22.0.1 - - [27/Sep/2019:08:24:44 +0000] "GET /apple-touch-icon.png HTTP/1.1" 404 1094
+172.22.0.1 - - [27/Sep/2019:08:24:44 +0000] "GET /apple-touch-icon.png HTTP/1.1" 404 1094
+172.22.0.1 - - [27/Sep/2019:08:24:45 +0000] "GET /mywork/mycreature HTTP/1.1" 200 6397
+172.22.0.1 - - [27/Sep/2019:08:25:05 +0000] "GET /mywork/mycreature HTTP/1.1" 200 6397
+172.22.0.1 - - [27/Sep/2019:08:25:17 +0000] "GET /mywork/form HTTP/1.1" 200 3499
+172.22.0.1 - - [27/Sep/2019:08:25:24 +0000] "GET /mywork/memoform HTTP/1.1" 200 2869
+172.22.0.1 - - [27/Sep/2019:08:25:32 +0000] "GET /mywork/igopyCode HTTP/1.1" 200 9794
+172.22.0.1 - - [27/Sep/2019:08:25:44 +0000] "GET /mywork/calcuratorform HTTP/1.1" 200 2429
+172.22.0.1 - - [27/Sep/2019:08:26:21 +0000] "POST /mywork/calcuratorresult HTTP/1.1" 200 2687

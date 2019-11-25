@@ -19,6 +19,7 @@
         <a href="#memo">~メモ</a>
         <a href="#cal">~電卓</a>
         <a href="#igo_python">~囲碁のPythonコード</a>
+        <a href="#stamina">~スタミナ計算</a>
         <a href="#kanso">~まとめ</a>
         
         <h1 style="color: #364e96; padding: 0.5em 0; border-top: solid 3px #364e96; border-bottom: solid 3px #364e96;">
@@ -56,6 +57,15 @@
         <p><%= request.getAttribute("kikkake_igo") %></p>
         <h3>・気をつけたところ</h3>
         <p><%= request.getAttribute("kodawari_igo") %></p>
+        
+        <a name="stamina"></a>
+        <h2 style ="background: linear-gradient(transparent 70%, #a7d6ff 70%);">パズドラのスタミナ計算</h2>
+        <p><a href="pazudoraform">どん</a></p>
+        <h3>・製作のきっかけ</h3>
+        <p><%= request.getAttribute("kikkake_stamina") %></p>
+        <h3>・気をつけたところ</h3>
+        <p><%= request.getAttribute("kodawari_stamina") %></p>
+        
         <br>
         <br>
         <a name="kanso"></a>

@@ -73,6 +73,20 @@ public class MyCreature extends HttpServlet {
             
             
             
+            //スタミナ計算機のきっかけ
+            String EE = "　ソーシャルゲームの「スタミナがいつまでにいくつたまるか」を<br>"+
+            "考えるのが面倒だったので、今の量と欲しい量を与えれば、貯まる時間を表示するようにした。";
+            request.setAttribute("kikkake_stamina", EE);
+            
+            //スタミナ計算機の制作おいて気をつけたこと
+            String E = "　<br>"+
+            "<br>"+
+            "　";
+            request.setAttribute("kodawari_stamina", E);
+            
+            
+            
+            
             //まとめ
             String kanso = "　物を作るうえで大切なことは、周りを見渡して、<br>"+
             "自分や周りの人間が何を欲しているかを考えることが重要だと思った。<br>"+

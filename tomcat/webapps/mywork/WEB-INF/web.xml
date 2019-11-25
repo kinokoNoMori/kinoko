@@ -216,7 +216,24 @@
     </servlet-mapping>
     
     
+    <!-- パズドラ -->
+    <servlet>
+        <servlet-name>PazudoraForm</servlet-name>
+        <servlet-class>PazudoraForm</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PazudoraForm</servlet-name>
+        <url-pattern>/pazudoraform</url-pattern>
+    </servlet-mapping>  
     
+    <servlet>
+        <servlet-name>PazudoraResult</servlet-name>
+        <servlet-class>PazudoraResult</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PazudoraResult</servlet-name>
+        <url-pattern>/pazudoraresult</url-pattern>
+    </servlet-mapping>  
     
     
     
@@ -292,8 +309,23 @@
         <url-pattern>/html</url-pattern>
     </servlet-mapping>    
     
-    
+    <servlet>
+        <servlet-name>Ztemp</servlet-name>
+        <servlet-class>Ztemp</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Ztemp</servlet-name>
+        <url-pattern>/ztemp</url-pattern>
+    </servlet-mapping>
         
+    <servlet>
+        <servlet-name>Ztemp_2</servlet-name>
+        <servlet-class>Ztemp_2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Ztemp_2</servlet-name>
+        <url-pattern>/ztemp_2</url-pattern>
+    </servlet-mapping>
     
     
 </web-app>

@@ -1,0 +1,8 @@
+172.22.0.1 - - [25/Nov/2019:00:50:59 +0000] "GET /mywork/pazudoraform HTTP/1.1" 200 1893
+172.22.0.1 - - [25/Nov/2019:00:51:00 +0000] "GET /apple-touch-icon-120x120-precomposed.png HTTP/1.1" 404 1114
+172.22.0.1 - - [25/Nov/2019:00:51:00 +0000] "GET /apple-touch-icon-120x120.png HTTP/1.1" 404 1102
+172.22.0.1 - - [25/Nov/2019:00:51:00 +0000] "GET /apple-touch-icon.png HTTP/1.1" 404 1094
+172.22.0.1 - - [25/Nov/2019:00:51:00 +0000] "GET /apple-touch-icon.png HTTP/1.1" 404 1094
+172.22.0.1 - - [25/Nov/2019:00:51:08 +0000] "POST /mywork/pazudoraresult HTTP/1.1" 200 892
+172.22.0.1 - - [25/Nov/2019:07:16:30 +0000] "GET /mywork/pazudoraform HTTP/1.1" 200 1893
+172.22.0.1 - - [25/Nov/2019:07:16:30 +0000] "GET /mywork/pazudoraform HTTP/1.1" 200 1893

@@ -1,0 +1,54 @@
+28-Oct-2019 10:24:20.570 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.20
+28-Oct-2019 10:24:20.575 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 3 2019 22:26:00 UTC
+28-Oct-2019 10:24:20.575 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.20.0
+28-Oct-2019 10:24:20.575 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+28-Oct-2019 10:24:20.576 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.15.0-45-generic
+28-Oct-2019 10:24:20.576 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+28-Oct-2019 10:24:20.576 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /opt/jdk-11.0.1
+28-Oct-2019 10:24:20.576 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.1+13
+28-Oct-2019 10:24:20.576 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+28-Oct-2019 10:24:20.577 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/ubuntu/kinoko/tomcat
+28-Oct-2019 10:24:20.577 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/ubuntu/kinoko/tomcat
+28-Oct-2019 10:24:20.605 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+28-Oct-2019 10:24:20.605 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+28-Oct-2019 10:24:20.606 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+28-Oct-2019 10:24:20.607 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/ubuntu/kinoko/tomcat/conf/logging.properties
+28-Oct-2019 10:24:20.607 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+28-Oct-2019 10:24:20.607 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+28-Oct-2019 10:24:20.607 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+28-Oct-2019 10:24:20.608 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+28-Oct-2019 10:24:20.609 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+28-Oct-2019 10:24:20.610 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/ubuntu/kinoko/tomcat
+28-Oct-2019 10:24:20.610 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/ubuntu/kinoko/tomcat
+28-Oct-2019 10:24:20.610 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/ubuntu/kinoko/tomcat/temp
+28-Oct-2019 10:24:20.610 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+28-Oct-2019 10:24:20.988 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+28-Oct-2019 10:24:21.036 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+28-Oct-2019 10:24:21.039 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [778] milliseconds
+28-Oct-2019 10:24:21.095 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+28-Oct-2019 10:24:21.095 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.20]
+28-Oct-2019 10:24:21.105 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/home/ubuntu/kinoko/tomcat/conf/Catalina/localhost/mywork.xml]
+28-Oct-2019 10:24:21.494 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-Oct-2019 10:24:21.545 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/home/ubuntu/kinoko/tomcat/conf/Catalina/localhost/mywork.xml] has finished in [440] ms
+28-Oct-2019 10:24:21.545 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/home/ubuntu/kinoko/tomcat/conf/Catalina/localhost/mydatabase.xml]
+28-Oct-2019 10:24:21.699 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-Oct-2019 10:24:21.701 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/home/ubuntu/kinoko/tomcat/conf/Catalina/localhost/mydatabase.xml] has finished in [155] ms
+28-Oct-2019 10:24:21.701 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/home/ubuntu/kinoko/tomcat/conf/Catalina/localhost/myform.xml]
+28-Oct-2019 10:24:21.727 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/home/ubuntu/kinoko/tomcat/conf/Catalina/localhost/myform.xml] has finished in [26] ms
+28-Oct-2019 10:24:21.728 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/manager]
+28-Oct-2019 10:24:21.787 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/manager] has finished in [60] ms
+28-Oct-2019 10:24:21.787 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/mybw]
+28-Oct-2019 10:24:21.807 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/mybw] has finished in [20] ms
+28-Oct-2019 10:24:21.807 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/ROOT]
+28-Oct-2019 10:24:21.823 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/ROOT] has finished in [15] ms
+28-Oct-2019 10:24:21.823 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/mybbs]
+28-Oct-2019 10:24:21.854 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/mybbs] has finished in [30] ms
+28-Oct-2019 10:24:21.854 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/docs]
+28-Oct-2019 10:24:21.877 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/docs] has finished in [23] ms
+28-Oct-2019 10:24:21.878 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/host-manager]
+28-Oct-2019 10:24:21.900 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/host-manager] has finished in [22] ms
+28-Oct-2019 10:24:21.901 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ubuntu/kinoko/tomcat/webapps/examples]
+28-Oct-2019 10:24:22.127 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ubuntu/kinoko/tomcat/webapps/examples] has finished in [227] ms
+28-Oct-2019 10:24:22.131 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+28-Oct-2019 10:24:22.150 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+28-Oct-2019 10:24:22.152 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1,113] milliseconds

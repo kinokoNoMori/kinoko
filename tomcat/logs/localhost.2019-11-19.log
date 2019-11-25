@@ -1,0 +1,1562 @@
+19-Nov-2019 07:35:59.950 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+19-Nov-2019 07:35:59.950 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+19-Nov-2019 07:35:59.952 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@7159139f')
+19-Nov-2019 07:36:04.248 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+19-Nov-2019 07:36:04.248 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+19-Nov-2019 07:36:04.249 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@746b18fd')
+19-Nov-2019 07:36:04.285 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+19-Nov-2019 07:36:04.285 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+19-Nov-2019 07:41:44.400 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.ApplicationDispatcher.invoke Servlet.service() for servlet [jsp] threw exception
+	java.lang.NumberFormatException: null
+		at java.base/java.lang.Integer.parseInt(Integer.java:614)
+		at java.base/java.lang.Integer.parseInt(Integer.java:770)
+		at org.apache.jsp.WEB_002dINF.views.calcuratorresult_jsp._jspService(calcuratorresult_jsp.java:159)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:476)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+		at CalcuratorResult.doPost(CalcuratorResult.java:23)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1839)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+19-Nov-2019 07:41:44.402 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [CalcuratorResult] in context with path [/mywork] threw exception [An exception occurred processing [WEB-INF/views/calcuratorresult.jsp] at line [34]
+
+31:         <% 
+32:         double a = Double.parseDouble(xx);
+33:         double b = Double.parseDouble(yy);
+34:         int o = Integer.parseInt(ope);
+35:         double ans = 0;
+36:         String Ope = "";
+37:         %>
+
+
+Stacktrace:] with root cause
+	java.lang.NumberFormatException: null
+		at java.base/java.lang.Integer.parseInt(Integer.java:614)
+		at java.base/java.lang.Integer.parseInt(Integer.java:770)
+		at org.apache.jsp.WEB_002dINF.views.calcuratorresult_jsp._jspService(calcuratorresult_jsp.java:159)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:476)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+		at CalcuratorResult.doPost(CalcuratorResult.java:23)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1839)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+19-Nov-2019 07:42:39.188 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.ApplicationDispatcher.invoke Servlet.service() for servlet [jsp] threw exception
+	java.lang.NumberFormatException: For input string: "+"
+		at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+		at java.base/java.lang.Integer.parseInt(Integer.java:642)
+		at java.base/java.lang.Integer.parseInt(Integer.java:770)
+		at org.apache.jsp.WEB_002dINF.views.calcuratorresult_jsp._jspService(calcuratorresult_jsp.java:159)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:476)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+		at CalcuratorResult.doPost(CalcuratorResult.java:23)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1839)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+19-Nov-2019 07:42:39.188 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [CalcuratorResult] in context with path [/mywork] threw exception [An exception occurred processing [WEB-INF/views/calcuratorresult.jsp] at line [34]
+
+31:         <% 
+32:         double a = Double.parseDouble(xx);
+33:         double b = Double.parseDouble(yy);
+34:         int o = Integer.parseInt(ope);
+35:         double ans = 0;
+36:         String Ope = "";
+37:         %>
+
+
+Stacktrace:] with root cause
+	java.lang.NumberFormatException: For input string: "+"
+		at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+		at java.base/java.lang.Integer.parseInt(Integer.java:642)
+		at java.base/java.lang.Integer.parseInt(Integer.java:770)
+		at org.apache.jsp.WEB_002dINF.views.calcuratorresult_jsp._jspService(calcuratorresult_jsp.java:159)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:476)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+		at CalcuratorResult.doPost(CalcuratorResult.java:23)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1839)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+19-Nov-2019 07:43:50.382 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.ApplicationDispatcher.invoke Servlet.service() for servlet [jsp] threw exception
+	java.lang.NumberFormatException: For input string: "+"
+		at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+		at java.base/java.lang.Integer.parseInt(Integer.java:642)
+		at java.base/java.lang.Integer.parseInt(Integer.java:770)
+		at org.apache.jsp.WEB_002dINF.views.calcuratorresult_jsp._jspService(calcuratorresult_jsp.java:159)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:476)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+		at CalcuratorResult.doPost(CalcuratorResult.java:23)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1839)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+19-Nov-2019 07:43:50.383 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [CalcuratorResult] in context with path [/mywork] threw exception [An exception occurred processing [WEB-INF/views/calcuratorresult.jsp] at line [34]
+
+31:         <% 
+32:         double a = Double.parseDouble(xx);
+33:         double b = Double.parseDouble(yy);
+34:         int o = Integer.parseInt(ope);
+35:         double ans = 0;
+36:         String Ope = "";
+37:         %>
+
+
+Stacktrace:] with root cause
+	java.lang.NumberFormatException: For input string: "+"
+		at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+		at java.base/java.lang.Integer.parseInt(Integer.java:642)
+		at java.base/java.lang.Integer.parseInt(Integer.java:770)
+		at org.apache.jsp.WEB_002dINF.views.calcuratorresult_jsp._jspService(calcuratorresult_jsp.java:159)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:476)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+		at CalcuratorResult.doPost(CalcuratorResult.java:23)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1839)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+19-Nov-2019 07:44:04.413 SEVERE [http-nio-8080-exec-10] org.apache.catalina.core.ApplicationDispatcher.invoke Servlet.service() for servlet [jsp] threw exception
+	java.lang.NumberFormatException: null
+		at java.base/java.lang.Integer.parseInt(Integer.java:614)
+		at java.base/java.lang.Integer.parseInt(Integer.java:770)
+		at org.apache.jsp.WEB_002dINF.views.calcuratorresult_jsp._jspService(calcuratorresult_jsp.java:159)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:476)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+		at CalcuratorResult.doPost(CalcuratorResult.java:23)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1839)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+19-Nov-2019 07:44:04.414 SEVERE [http-nio-8080-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [CalcuratorResult] in context with path [/mywork] threw exception [An exception occurred processing [WEB-INF/views/calcuratorresult.jsp] at line [34]
+
+31:         <% 
+32:         double a = Double.parseDouble(xx);
+33:         double b = Double.parseDouble(yy);
+34:         int o = Integer.parseInt(ope);
+35:         double ans = 0;
+36:         String Ope = "";
+37:         %>
+
+
+Stacktrace:] with root cause
+	java.lang.NumberFormatException: null
+		at java.base/java.lang.Integer.parseInt(Integer.java:614)
+		at java.base/java.lang.Integer.parseInt(Integer.java:770)
+		at org.apache.jsp.WEB_002dINF.views.calcuratorresult_jsp._jspService(calcuratorresult_jsp.java:159)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:476)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+		at CalcuratorResult.doPost(CalcuratorResult.java:23)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1839)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+19-Nov-2019 07:44:10.540 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.ApplicationDispatcher.invoke Servlet.service() for servlet [jsp] threw exception
+	java.lang.NumberFormatException: null
+		at java.base/java.lang.Integer.parseInt(Integer.java:614)
+		at java.base/java.lang.Integer.parseInt(Integer.java:770)
+		at org.apache.jsp.WEB_002dINF.views.calcuratorresult_jsp._jspService(calcuratorresult_jsp.java:159)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:476)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+		at CalcuratorResult.doPost(CalcuratorResult.java:23)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1839)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+19-Nov-2019 07:44:10.541 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [CalcuratorResult] in context with path [/mywork] threw exception [An exception occurred processing [WEB-INF/views/calcuratorresult.jsp] at line [34]
+
+31:         <% 
+32:         double a = Double.parseDouble(xx);
+33:         double b = Double.parseDouble(yy);
+34:         int o = Integer.parseInt(ope);
+35:         double ans = 0;
+36:         String Ope = "";
+37:         %>
+
+
+Stacktrace:] with root cause
+	java.lang.NumberFormatException: null
+		at java.base/java.lang.Integer.parseInt(Integer.java:614)
+		at java.base/java.lang.Integer.parseInt(Integer.java:770)
+		at org.apache.jsp.WEB_002dINF.views.calcuratorresult_jsp._jspService(calcuratorresult_jsp.java:159)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:476)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+		at CalcuratorResult.doPost(CalcuratorResult.java:23)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1839)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+19-Nov-2019 07:45:00.786 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.ApplicationDispatcher.invoke Servlet.service() for servlet [jsp] threw exception
+	java.lang.NumberFormatException: For input string: "+"
+		at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+		at java.base/java.lang.Integer.parseInt(Integer.java:642)
+		at java.base/java.lang.Integer.parseInt(Integer.java:770)
+		at org.apache.jsp.WEB_002dINF.views.calcuratorresult_jsp._jspService(calcuratorresult_jsp.java:159)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:476)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+		at CalcuratorResult.doPost(CalcuratorResult.java:23)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1839)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+19-Nov-2019 07:45:00.786 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [CalcuratorResult] in context with path [/mywork] threw exception [An exception occurred processing [WEB-INF/views/calcuratorresult.jsp] at line [34]
+
+31:         <% 
+32:         double a = Double.parseDouble(xx);
+33:         double b = Double.parseDouble(yy);
+34:         int o = Integer.parseInt(ope);
+35:         double ans = 0;
+36:         String Ope = "";
+37:         %>
+
+
+Stacktrace:] with root cause
+	java.lang.NumberFormatException: For input string: "+"
+		at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+		at java.base/java.lang.Integer.parseInt(Integer.java:642)
+		at java.base/java.lang.Integer.parseInt(Integer.java:770)
+		at org.apache.jsp.WEB_002dINF.views.calcuratorresult_jsp._jspService(calcuratorresult_jsp.java:159)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:476)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+		at CalcuratorResult.doPost(CalcuratorResult.java:23)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1839)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+19-Nov-2019 07:45:29.622 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.ApplicationDispatcher.invoke Servlet.service() for servlet [jsp] threw exception
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [38] in the jsp file: [/WEB-INF/views/calcuratorresult.jsp]
+o cannot be resolved to a variable
+35:         double ans = 0;
+36:         String Ope = "";
+37:         %>
+38:         <% if(o==0){
+39:             ans = a + b;
+40:             Ope = " + ";
+41:         }else if(o==1){
+
+
+An error occurred at line: [41] in the jsp file: [/WEB-INF/views/calcuratorresult.jsp]
+o cannot be resolved to a variable
+38:         <% if(o==0){
+39:             ans = a + b;
+40:             Ope = " + ";
+41:         }else if(o==1){
+42:             ans = a - b;
+43:             Ope = " - ";
+44:         }else if(o==2){
+
+
+An error occurred at line: [44] in the jsp file: [/WEB-INF/views/calcuratorresult.jsp]
+o cannot be resolved to a variable
+41:         }else if(o==1){
+42:             ans = a - b;
+43:             Ope = " - ";
+44:         }else if(o==2){
+45:             ans = a * b;
+46:             Ope = " x ";
+47:         }else if(o==3){
+
+
+An error occurred at line: [47] in the jsp file: [/WEB-INF/views/calcuratorresult.jsp]
+o cannot be resolved to a variable
+44:         }else if(o==2){
+45:             ans = a * b;
+46:             Ope = " x ";
+47:         }else if(o==3){
+48:             ans = a / b;
+49:             Ope = " ÷ ";
+50:         }else if(o==4){
+
+
+An error occurred at line: [50] in the jsp file: [/WEB-INF/views/calcuratorresult.jsp]
+o cannot be resolved to a variable
+47:         }else if(o==3){
+48:             ans = a / b;
+49:             Ope = " ÷ ";
+50:         }else if(o==4){
+51:             ans = java.lang.Math.pow(a, b);
+52:             Ope = " ^ ";
+53:         } else{
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:522)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+		at CalcuratorResult.doPost(CalcuratorResult.java:23)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1839)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+19-Nov-2019 07:45:29.623 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [CalcuratorResult] in context with path [/mywork] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [38] in the jsp file: [/WEB-INF/views/calcuratorresult.jsp]
+o cannot be resolved to a variable
+35:         double ans = 0;
+36:         String Ope = "";
+37:         %>
+38:         <% if(o==0){
+39:             ans = a + b;
+40:             Ope = " + ";
+41:         }else if(o==1){
+
+
+An error occurred at line: [41] in the jsp file: [/WEB-INF/views/calcuratorresult.jsp]
+o cannot be resolved to a variable
+38:         <% if(o==0){
+39:             ans = a + b;
+40:             Ope = " + ";
+41:         }else if(o==1){
+42:             ans = a - b;
+43:             Ope = " - ";
+44:         }else if(o==2){
+
+
+An error occurred at line: [44] in the jsp file: [/WEB-INF/views/calcuratorresult.jsp]
+o cannot be resolved to a variable
+41:         }else if(o==1){
+42:             ans = a - b;
+43:             Ope = " - ";
+44:         }else if(o==2){
+45:             ans = a * b;
+46:             Ope = " x ";
+47:         }else if(o==3){
+
+
+An error occurred at line: [47] in the jsp file: [/WEB-INF/views/calcuratorresult.jsp]
+o cannot be resolved to a variable
+44:         }else if(o==2){
+45:             ans = a * b;
+46:             Ope = " x ";
+47:         }else if(o==3){
+48:             ans = a / b;
+49:             Ope = " ÷ ";
+50:         }else if(o==4){
+
+
+An error occurred at line: [50] in the jsp file: [/WEB-INF/views/calcuratorresult.jsp]
+o cannot be resolved to a variable
+47:         }else if(o==3){
+48:             ans = a / b;
+49:             Ope = " ÷ ";
+50:         }else if(o==4){
+51:             ans = java.lang.Math.pow(a, b);
+52:             Ope = " ^ ";
+53:         } else{
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [38] in the jsp file: [/WEB-INF/views/calcuratorresult.jsp]
+o cannot be resolved to a variable
+35:         double ans = 0;
+36:         String Ope = "";
+37:         %>
+38:         <% if(o==0){
+39:             ans = a + b;
+40:             Ope = " + ";
+41:         }else if(o==1){
+
+
+An error occurred at line: [41] in the jsp file: [/WEB-INF/views/calcuratorresult.jsp]
+o cannot be resolved to a variable
+38:         <% if(o==0){
+39:             ans = a + b;
+40:             Ope = " + ";
+41:         }else if(o==1){
+42:             ans = a - b;
+43:             Ope = " - ";
+44:         }else if(o==2){
+
+
+An error occurred at line: [44] in the jsp file: [/WEB-INF/views/calcuratorresult.jsp]
+o cannot be resolved to a variable
+41:         }else if(o==1){
+42:             ans = a - b;
+43:             Ope = " - ";
+44:         }else if(o==2){
+45:             ans = a * b;
+46:             Ope = " x ";
+47:         }else if(o==3){
+
+
+An error occurred at line: [47] in the jsp file: [/WEB-INF/views/calcuratorresult.jsp]
+o cannot be resolved to a variable
+44:         }else if(o==2){
+45:             ans = a * b;
+46:             Ope = " x ";
+47:         }else if(o==3){
+48:             ans = a / b;
+49:             Ope = " ÷ ";
+50:         }else if(o==4){
+
+
+An error occurred at line: [50] in the jsp file: [/WEB-INF/views/calcuratorresult.jsp]
+o cannot be resolved to a variable
+47:         }else if(o==3){
+48:             ans = a / b;
+49:             Ope = " ÷ ";
+50:         }else if(o==4){
+51:             ans = java.lang.Math.pow(a, b);
+52:             Ope = " ^ ";
+53:         } else{
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:522)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+		at CalcuratorResult.doPost(CalcuratorResult.java:23)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1839)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+19-Nov-2019 07:45:41.144 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.ApplicationDispatcher.invoke Servlet.service() for servlet [jsp] threw exception
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [38] in the jsp file: [/WEB-INF/views/calcuratorresult.jsp]
+o cannot be resolved to a variable
+35:         double ans = 0;
+36:         String Ope = "";
+37:         %>
+38:         <% if(o==0){
+39:             ans = a + b;
+40:             Ope = " + ";
+41:         }else if(o==1){
+
+
+An error occurred at line: [41] in the jsp file: [/WEB-INF/views/calcuratorresult.jsp]
+o cannot be resolved to a variable
+38:         <% if(o==0){
+39:             ans = a + b;
+40:             Ope = " + ";
+41:         }else if(o==1){
+42:             ans = a - b;
+43:             Ope = " - ";
+44:         }else if(o==2){
+
+
+An error occurred at line: [44] in the jsp file: [/WEB-INF/views/calcuratorresult.jsp]
+o cannot be resolved to a variable
+41:         }else if(o==1){
+42:             ans = a - b;
+43:             Ope = " - ";
+44:         }else if(o==2){
+45:             ans = a * b;
+46:             Ope = " x ";
+47:         }else if(o==3){
+
+
+An error occurred at line: [47] in the jsp file: [/WEB-INF/views/calcuratorresult.jsp]
+o cannot be resolved to a variable
+44:         }else if(o==2){
+45:             ans = a * b;
+46:             Ope = " x ";
+47:         }else if(o==3){
+48:             ans = a / b;
+49:             Ope = " ÷ ";
+50:         }else if(o==4){
+
+
+An error occurred at line: [50] in the jsp file: [/WEB-INF/views/calcuratorresult.jsp]
+o cannot be resolved to a variable
+47:         }else if(o==3){
+48:             ans = a / b;
+49:             Ope = " ÷ ";
+50:         }else if(o==4){
+51:             ans = java.lang.Math.pow(a, b);
+52:             Ope = " ^ ";
+53:         } else{
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:522)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+		at CalcuratorResult.doPost(CalcuratorResult.java:23)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1839)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+19-Nov-2019 07:45:41.144 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [CalcuratorResult] in context with path [/mywork] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [38] in the jsp file: [/WEB-INF/views/calcuratorresult.jsp]
+o cannot be resolved to a variable
+35:         double ans = 0;
+36:         String Ope = "";
+37:         %>
+38:         <% if(o==0){
+39:             ans = a + b;
+40:             Ope = " + ";
+41:         }else if(o==1){
+
+
+An error occurred at line: [41] in the jsp file: [/WEB-INF/views/calcuratorresult.jsp]
+o cannot be resolved to a variable
+38:         <% if(o==0){
+39:             ans = a + b;
+40:             Ope = " + ";
+41:         }else if(o==1){
+42:             ans = a - b;
+43:             Ope = " - ";
+44:         }else if(o==2){
+
+
+An error occurred at line: [44] in the jsp file: [/WEB-INF/views/calcuratorresult.jsp]
+o cannot be resolved to a variable
+41:         }else if(o==1){
+42:             ans = a - b;
+43:             Ope = " - ";
+44:         }else if(o==2){
+45:             ans = a * b;
+46:             Ope = " x ";
+47:         }else if(o==3){
+
+
+An error occurred at line: [47] in the jsp file: [/WEB-INF/views/calcuratorresult.jsp]
+o cannot be resolved to a variable
+44:         }else if(o==2){
+45:             ans = a * b;
+46:             Ope = " x ";
+47:         }else if(o==3){
+48:             ans = a / b;
+49:             Ope = " ÷ ";
+50:         }else if(o==4){
+
+
+An error occurred at line: [50] in the jsp file: [/WEB-INF/views/calcuratorresult.jsp]
+o cannot be resolved to a variable
+47:         }else if(o==3){
+48:             ans = a / b;
+49:             Ope = " ÷ ";
+50:         }else if(o==4){
+51:             ans = java.lang.Math.pow(a, b);
+52:             Ope = " ^ ";
+53:         } else{
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [38] in the jsp file: [/WEB-INF/views/calcuratorresult.jsp]
+o cannot be resolved to a variable
+35:         double ans = 0;
+36:         String Ope = "";
+37:         %>
+38:         <% if(o==0){
+39:             ans = a + b;
+40:             Ope = " + ";
+41:         }else if(o==1){
+
+
+An error occurred at line: [41] in the jsp file: [/WEB-INF/views/calcuratorresult.jsp]
+o cannot be resolved to a variable
+38:         <% if(o==0){
+39:             ans = a + b;
+40:             Ope = " + ";
+41:         }else if(o==1){
+42:             ans = a - b;
+43:             Ope = " - ";
+44:         }else if(o==2){
+
+
+An error occurred at line: [44] in the jsp file: [/WEB-INF/views/calcuratorresult.jsp]
+o cannot be resolved to a variable
+41:         }else if(o==1){
+42:             ans = a - b;
+43:             Ope = " - ";
+44:         }else if(o==2){
+45:             ans = a * b;
+46:             Ope = " x ";
+47:         }else if(o==3){
+
+
+An error occurred at line: [47] in the jsp file: [/WEB-INF/views/calcuratorresult.jsp]
+o cannot be resolved to a variable
+44:         }else if(o==2){
+45:             ans = a * b;
+46:             Ope = " x ";
+47:         }else if(o==3){
+48:             ans = a / b;
+49:             Ope = " ÷ ";
+50:         }else if(o==4){
+
+
+An error occurred at line: [50] in the jsp file: [/WEB-INF/views/calcuratorresult.jsp]
+o cannot be resolved to a variable
+47:         }else if(o==3){
+48:             ans = a / b;
+49:             Ope = " ÷ ";
+50:         }else if(o==4){
+51:             ans = java.lang.Math.pow(a, b);
+52:             Ope = " ^ ";
+53:         } else{
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:522)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+		at CalcuratorResult.doPost(CalcuratorResult.java:23)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1839)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+19-Nov-2019 07:46:34.936 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.ApplicationDispatcher.invoke Servlet.service() for servlet [jsp] threw exception
+	java.lang.NumberFormatException: For input string: "+"
+		at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+		at java.base/java.lang.Integer.parseInt(Integer.java:642)
+		at java.base/java.lang.Integer.parseInt(Integer.java:770)
+		at org.apache.jsp.WEB_002dINF.views.calcuratorresult_jsp._jspService(calcuratorresult_jsp.java:159)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:476)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+		at CalcuratorResult.doPost(CalcuratorResult.java:23)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1839)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+19-Nov-2019 07:46:34.937 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [CalcuratorResult] in context with path [/mywork] threw exception [An exception occurred processing [/WEB-INF/views/calcuratorresult.jsp] at line [34]
+
+31:         <% 
+32:         double a = Double.parseDouble(xx);
+33:         double b = Double.parseDouble(yy);
+34:         int o = Integer.parseInt(ope);
+35:         double ans = 0;
+36:         String Ope = "";
+37:         %>
+
+
+Stacktrace:] with root cause
+	java.lang.NumberFormatException: For input string: "+"
+		at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+		at java.base/java.lang.Integer.parseInt(Integer.java:642)
+		at java.base/java.lang.Integer.parseInt(Integer.java:770)
+		at org.apache.jsp.WEB_002dINF.views.calcuratorresult_jsp._jspService(calcuratorresult_jsp.java:159)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:476)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+		at CalcuratorResult.doPost(CalcuratorResult.java:23)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1839)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+19-Nov-2019 07:52:01.249 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.ApplicationDispatcher.invoke Servlet.service() for servlet [jsp] threw exception
+	java.lang.NumberFormatException: empty String
+		at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1842)
+		at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+		at java.base/java.lang.Double.parseDouble(Double.java:543)
+		at org.apache.jsp.WEB_002dINF.views.calcuratorresult_jsp._jspService(calcuratorresult_jsp.java:158)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:476)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+		at CalcuratorResult.doPost(CalcuratorResult.java:23)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1839)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+19-Nov-2019 07:52:01.250 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [CalcuratorResult] in context with path [/mywork] threw exception [An exception occurred processing [/WEB-INF/views/calcuratorresult.jsp] at line [33]
+
+30:         
+31:         <% 
+32:         double a = Double.parseDouble(xx);
+33:         double b = Double.parseDouble(yy);
+34:         int o = Integer.parseInt(ope);
+35:         double ans = 0;
+36:         String Ope = "";
+
+
+Stacktrace:] with root cause
+	java.lang.NumberFormatException: empty String
+		at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1842)
+		at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+		at java.base/java.lang.Double.parseDouble(Double.java:543)
+		at org.apache.jsp.WEB_002dINF.views.calcuratorresult_jsp._jspService(calcuratorresult_jsp.java:158)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:476)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+		at CalcuratorResult.doPost(CalcuratorResult.java:23)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1839)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+19-Nov-2019 07:52:08.460 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.ApplicationDispatcher.invoke Servlet.service() for servlet [jsp] threw exception
+	java.lang.NumberFormatException: For input string: "a"
+		at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+		at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+		at java.base/java.lang.Double.parseDouble(Double.java:543)
+		at org.apache.jsp.WEB_002dINF.views.calcuratorresult_jsp._jspService(calcuratorresult_jsp.java:157)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:476)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+		at CalcuratorResult.doPost(CalcuratorResult.java:23)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1839)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+19-Nov-2019 07:52:08.460 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [CalcuratorResult] in context with path [/mywork] threw exception [An exception occurred processing [/WEB-INF/views/calcuratorresult.jsp] at line [32]
+
+29:         <% String yy = (String)request.getAttribute("y"); %>
+30:         
+31:         <% 
+32:         double a = Double.parseDouble(xx);
+33:         double b = Double.parseDouble(yy);
+34:         int o = Integer.parseInt(ope);
+35:         double ans = 0;
+
+
+Stacktrace:] with root cause
+	java.lang.NumberFormatException: For input string: "a"
+		at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+		at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+		at java.base/java.lang.Double.parseDouble(Double.java:543)
+		at org.apache.jsp.WEB_002dINF.views.calcuratorresult_jsp._jspService(calcuratorresult_jsp.java:157)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:476)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+		at CalcuratorResult.doPost(CalcuratorResult.java:23)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1839)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+19-Nov-2019 07:52:11.967 SEVERE [http-nio-8080-exec-10] org.apache.catalina.core.ApplicationDispatcher.invoke Servlet.service() for servlet [jsp] threw exception
+	java.lang.NumberFormatException: For input string: "a"
+		at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+		at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+		at java.base/java.lang.Double.parseDouble(Double.java:543)
+		at org.apache.jsp.WEB_002dINF.views.calcuratorresult_jsp._jspService(calcuratorresult_jsp.java:157)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:476)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+		at CalcuratorResult.doPost(CalcuratorResult.java:23)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1839)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+19-Nov-2019 07:52:11.968 SEVERE [http-nio-8080-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [CalcuratorResult] in context with path [/mywork] threw exception [An exception occurred processing [/WEB-INF/views/calcuratorresult.jsp] at line [32]
+
+29:         <% String yy = (String)request.getAttribute("y"); %>
+30:         
+31:         <% 
+32:         double a = Double.parseDouble(xx);
+33:         double b = Double.parseDouble(yy);
+34:         int o = Integer.parseInt(ope);
+35:         double ans = 0;
+
+
+Stacktrace:] with root cause
+	java.lang.NumberFormatException: For input string: "a"
+		at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+		at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+		at java.base/java.lang.Double.parseDouble(Double.java:543)
+		at org.apache.jsp.WEB_002dINF.views.calcuratorresult_jsp._jspService(calcuratorresult_jsp.java:157)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:476)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+		at CalcuratorResult.doPost(CalcuratorResult.java:23)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1839)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)

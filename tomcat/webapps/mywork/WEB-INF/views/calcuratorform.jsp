@@ -16,8 +16,8 @@
         border-left: solid 5px #ffaf58;/*左線（実線 太さ 色）*/">
         <a href="top">総合トップ</a><a>＞</a>
         <a href="mycreature">作成物</a><a>＞</a>
-        <a>計算機</a><a>＜</a>
-        <a href="mylanguages">学習した言語ページ</a>
+        <a>計算機</a><!-- <a>＜</a>
+        <a href="mylanguages">学習した言語ページ</a> -->
         <br>
         <a href="#topBoard">~計算機の最上段へ</a><br>
         </p>
@@ -28,6 +28,8 @@
         <%= message %></h1>
         <a name="topBoard"></a>
         <h2 style ="background: linear-gradient(transparent 70%, #a7d6ff 70%);">計算機</h2>
+        
+        <!--
         <ul>
         <li>0 => +</li>
         <li>1 => -</li>
@@ -35,6 +37,8 @@
         <li>3 => /</li>
         <li>4 => ^</li>
         </ul>
+        -->
+        
         <form action="calcuratorresult" method="post" >
         <table>
             <tr>
@@ -44,7 +48,16 @@
             </tr>
             <tr>
             <td><input type="text" name="x"></td>
-            <td><input type="text" name="operator"></td>
+            <td>
+            <select type="text" name="operator">
+                <option value="0">＋</option>
+                <option value="1">ー</option>
+                <option value="2">×</option>
+                <option value="3">÷</option>
+                <option value="4">^累乗</option>
+            </select>
+            </td>
+            <!-- <td><input type="text" name="operator"></td> -->
             <td><input type="text" name="y"></td>
             </tr>
         </table>
@@ -62,8 +75,8 @@
         border-left: solid 5px #ffaf58;/*左線（実線 太さ 色）*/">
         <a href="top">総合トップ</a><a>＞</a>
         <a href="mycreature">作成物</a><a>＞</a>
-        <a>計算機</a><a>＜</a>
-        <a href="mylanguages">学習した言語ページ</a>
+        <a>計算機</a><!--<a>＜</a>
+         <a href="mylanguages">学習した言語ページ</a> -->
         <br>
         <a href="#topBoard">~計算機の最上段へ</a><br>
         </p>

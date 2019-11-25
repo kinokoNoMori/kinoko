@@ -11,10 +11,8 @@ public class MyHobbies extends HttpServlet {
             request.setAttribute("myhobbies", myhobbies);
         
             String Soccer = "　サッカーをやっています。<br>"+
-            "　社会人チームに属し、リーグにも出場します。<br>"+
-            "　ポジションはボランチで、広い視野を持ち、素早く判断し、処理することが得意です。<br>"+
-            "　また、全体のバランスをみて、ポジションをスライドさせることもあるので、<br>"+
-            "守備的ポジションとはいえ、比較的オールラウンダーなタイプだと思います。";
+            "　社会人チームに属し、リーグにも出場しています。<br>"+
+            "　ポジションは左のハーフで、広い視野を持ち、素早く判断し、処理することが得意です。";
             request.setAttribute("soccer", Soccer);
         
             String Commic = "　漫画が好きです。<br>"+
