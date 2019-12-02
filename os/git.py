@@ -1,24 +1,33 @@
 import os, time
 
 # tomcat起動
-def git_pull(mess):
+def git_pull():
+    print("コミットメッセージを入力してください")
+    mess = input()
+    #
     print("ホームディレクトリを移動します。")
     os.chdir("/home/ubuntu/kinoko")
     time.sleep(1)
+    #
     print("pullします。")
     os.system("git pull")#pullもできる
     time.sleep(3)
-    os.system("git add .")#pullもできる
+    #
+    print("addします。")
+    os.system("git add .")#addもできる
     time.sleep(3)
-    os.system("git commit -m \""+ mess + "\"")#pullもできる
+    #
+    os.system("git commit -m \""+ mess + "\"")#commitもできる
     time.sleep(10)
-    os.system("git push")#pullもできる
+    #
+    os.system("git push")#pushもできる
+    os.system("KinokoNoMori")
     print("KinokoNoMori")
     print("714578hyznhA")
     
 #メインメソッド
 def main():
-    git_pull("commit test")
+    git_pull()
 
 
 
