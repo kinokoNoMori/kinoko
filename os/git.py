@@ -11,6 +11,10 @@ def git_pull(mess):
     os.system("git add .")#pullもできる
     time.sleep(3)
     os.system("git commit -m \""+ mess + "\"")#pullもできる
+    time.sleep(10)
+    os.system("git push")#pullもできる
+    print("KinokoNoMori")
+    print("714578hyznhA")
     
 #メインメソッド
 def main():
