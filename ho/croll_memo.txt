@@ -1,0 +1,2 @@
+https://www.sejuku.net/blog/69365
+https://docs.python.org/ja/3/library/urllib.request.html#module-urllib.request
