@@ -1,0 +1,13 @@
+172.22.0.1 - - [05/Dec/2019:10:16:37 +0000] "GET /mywork/calcuratorform HTTP/1.1" 200 2855
+172.22.0.1 - - [05/Dec/2019:10:16:37 +0000] "GET /apple-touch-icon-120x120-precomposed.png HTTP/1.1" 404 1114
+172.22.0.1 - - [05/Dec/2019:10:16:37 +0000] "GET /apple-touch-icon-120x120.png HTTP/1.1" 404 1102
+172.22.0.1 - - [05/Dec/2019:10:16:37 +0000] "GET /apple-touch-icon.png HTTP/1.1" 404 1094
+172.22.0.1 - - [05/Dec/2019:10:16:38 +0000] "GET /apple-touch-icon.png HTTP/1.1" 404 1094
+172.22.0.1 - - [05/Dec/2019:10:16:50 +0000] "POST /mywork/calcuratorresult HTTP/1.1" 200 3115
+172.22.0.1 - - [05/Dec/2019:10:17:05 +0000] "GET /mywork/calcuratorform HTTP/1.1" 200 2855
+172.22.0.1 - - [05/Dec/2019:10:17:15 +0000] "POST /mywork/calcuratorresult HTTP/1.1" 200 3111
+172.22.0.1 - - [05/Dec/2019:23:20:43 +0000] "GET /mywork/calcuratorform HTTP/1.1" 200 2855
+172.22.0.1 - - [05/Dec/2019:23:20:44 +0000] "GET /apple-touch-icon-120x120-precomposed.png HTTP/1.1" 404 1114
+172.22.0.1 - - [05/Dec/2019:23:20:44 +0000] "GET /apple-touch-icon-120x120.png HTTP/1.1" 404 1102
+172.22.0.1 - - [05/Dec/2019:23:20:44 +0000] "GET /apple-touch-icon.png HTTP/1.1" 404 1094
+172.22.0.1 - - [05/Dec/2019:23:20:44 +0000] "GET /apple-touch-icon.png HTTP/1.1" 404 1094
