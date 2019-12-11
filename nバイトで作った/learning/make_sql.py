@@ -20,8 +20,6 @@ tips_number = 0
 f = open(tips_path)
 for a in f:
     tips_number += a.count("##")
-    #print(a)
-print(tips_number)
 #Tips 把握できた
 
 
@@ -34,7 +32,6 @@ f = open(tips_path)
 for a in f:
     if "##" in a:
         tips_title = a.replace("## ","")
-        #print(tips_title) #うまくいったエル
         tips_titles[tips_point] = tips_title
         tips_point += 1
 # tipsのタイトル取得完了
