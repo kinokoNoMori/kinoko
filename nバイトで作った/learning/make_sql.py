@@ -20,7 +20,7 @@ tips_number = 0
 f = open(tips_path)
 for a in f:
     tips_number += a.count("##")
-    print(a)
+    #print(a)
 print(tips_number)
 #Tips 把握できた
 
@@ -42,7 +42,7 @@ for a in f:
 
 
 #tipsの内容を取得
-tips_contents = ["空"]*tips_number
+tips_contents = [""]*tips_number
 tips_point = -1#上の配列のindex
 tips_content = ""
 f = open(tips_path)
@@ -52,21 +52,13 @@ for a in f:
     elif "#" in a:
         pass
     else:
-        tips_content += a
-        print(tips_content) #うまくいったってないかも全部1つに入ってる説
-        tips_contents[tips_point] = tips_content
-        print("test")
-        print(tips_contents[tips_point])
-
-'''
-for i in tips_contents:
-    print(i)
-    print("^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+        tips_contents[tips_point] += a
 
 for i in range(tips_number):
-    print("========================================================================-")
     print("=="+tips_titles[i]+"==")
     print(tips_contents[i])
+#配列にtipsのタイトルと内容入れ込めた    
 
-'''
+
+
 ##chap10について終わり
