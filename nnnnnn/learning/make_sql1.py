@@ -65,8 +65,7 @@ print("/*====完了====*/")
 #
 ############################
 
-
-
+'''ここはwhileの中に
 # tips数を把握したい
 tips_number = 0
 f = open(tips_path)
@@ -102,13 +101,13 @@ for a in f:
         pass
     else:
         tips_contents[tips_point] += a
-'''
+
 for i in range(tips_number):
     print("=="+tips_titles[i]+"==")
     print(tips_contents[i])
-'''
-#配列にtipsのタイトルと内容入れ込めた
 
+#配列にtipsのタイトルと内容入れ込めた
+'''
 
 
 ##########################################
@@ -168,14 +167,108 @@ while cur_chap <= chap:
     work_problems_id = 1 + int(work_problems_id)
     cur_chap = 1 + int(cur_chap)
     
+    
+    ########=====================================================================-
     print("/*insert_work_problem_languages生成*/")
-
-
-#########
-'''
-なう：chap01~chap10のフォルダがないから引き出せなくエラー
-
-'''
+    
+    # tips数を把握したい
+    tips_number = 0
+    f = open(tips_path)
+    for a in f:
+        tips_number += a.count("##")
+    #Tips 把握できた
+    
+    
+    
+    #Tipsのタイトルを取りたいなあ
+    tips_titles = ["空"]*tips_number
+    tips_point = 0#上の配列のindex
+    tips_title = ""
+    f = open(tips_path)
+    for a in f:
+        if "##" in a:
+            tips_title = a.replace("## ","")
+            tips_titles[tips_point] = tips_title
+            tips_point += 1
+    # tipsのタイトル取得完了
+    
+    
+    
+    #tipsの内容を取得
+    tips_contents = [""]*tips_number
+    tips_point = -1#上の配列のindex
+    tips_content = ""
+    f = open(tips_path)
+    for a in f:
+        if "##" in a:
+            tips_point += 1
+        elif "#" in a:
+            pass
+        else:
+            tips_contents[tips_point] += a
+    '''
+    for i in range(tips_number):
+        print("=="+tips_titles[i]+"==")
+        print(tips_contents[i])
+    '''
+    #配列にtipsのタイトルと内容入れ込めた
+    
+    #########
+    '''
+    なう：insert_work_problemsできた
+    
+    うぃる：work_problem_languages作る
+    
+    
+    /* work_problem_languages*/
+      INSERT INTO `work_problem_languages`
+      (
+      id,
+      work_problem_uid,
+      language_id,
+      movie_id,
+      /*movie_file,--?
+      movie_file_expire_at,--?*/
+      play_time,
+      tips_title_1,
+      tips_title_2,
+      tips_title_3,
+      tips_title_4,
+      tips_title_5,
+      tips_title_6,
+      tips_content_1,
+      tips_content_2,
+      tips_content_3,
+      tips_content_4,
+      tips_content_5,
+      tips_content_6,
+      created_at,
+      updated_at
+    )
+      VALUES (
+      '',/*id => work_problems`のidと同じ*/
+      '',/*work_problem_uid　=> work_problems`のidと同じ*/
+      '',/*language_id => https://github.com/gi-no/learning/wiki/language_id*/
+      '',/*movie_id vimeoのあれ*/
+      '',/*play_time 動画時間*/
+      '',/*tips_title_1  READMの#のタイトル　 <= Tipsではないことに注意*/
+      '',/*tips_title_2 chapのTipsのタイトル　数に合わせて増減*/
+      '',/*tips_title_3*/
+      '',/*tips_title_4*/
+      '',/*tips_title_5*/
+      '',/*tips_title_6*/
+      '',/*tips_content_1 READMの#の記述 <= Tipsではないことに注意*/
+      '',/*tips_content_2 chapのTipsの内容　数に合わせて増減*/
+      '',/*tips_content_3*/
+      '',/*tips_content_4*/
+      '',/*tips_content_5*/
+      '',/*tips_content_6*/
+      NOW(),
+      NOW()
+      );
+    
+    
+    '''
 
 
 
