@@ -118,6 +118,22 @@ print("/*============================*/")
 print("/*chap1のwork_problems_idを入力してください => `work_problems`の空いてるとこ*/")
 work_problems_id = "24001" #####################################################################
 #work_problems_id = input()
+print("/*language_id => https://github.com/gi-no/learning/wiki/language_id*/")
+language_id = "23"#####################################################################
+#language_id = input()
+
+#ヴぃめお
+vimeo_nums = [0]*int(chap)
+vimeo_playtime = [0]*int(chap)
+'''
+for i in range(int(chap)):    
+    print("chap"+ chap +"のvimeoの番号を入力してください")
+    vimeo_nums[i] = input()
+    print("chap"+ chap +"のvimeoのプレイタイムを入力してください => ex5分6秒) => 05:06")
+    vimeo_playtime[i] = input()
+'''
+vimeo_nums = ["1","2","3","4","5","6","7","8","9","10"]##########################################################################
+vimeo_playtime = ["1","2","3","4","5","6","7","8","9","10"]##########################################################################
 
 cur_chap = 1
 chap = int(chap)
@@ -181,7 +197,7 @@ while cur_chap <= chap:
     
     
     #Tipsのタイトルを取りたいなあ
-    tips_titles = ["空"]*tips_number
+    tips_titles = ["NULL"]*9
     tips_point = 0#上の配列のindex
     tips_title = ""
     f = open(tips_path)
@@ -195,8 +211,9 @@ while cur_chap <= chap:
     
     
     #tipsの内容を取得
-    tips_contents = [""]*tips_number
-    tips_point = -1#上の配列のindex
+#   tips_contents = [""]*tips_number
+    tips_contents = ["NULL"]*9
+    tips_point = -1#上の配列のindex　　頭の#と##を無視したいから―1から
     tips_content = ""
     f = open(tips_path)
     for a in f:
@@ -218,61 +235,75 @@ while cur_chap <= chap:
     なう：insert_work_problemsできた
     
     うぃる：work_problem_languages作る
-    
-    
-    /* work_problem_languages*/
-      INSERT INTO `work_problem_languages`
-      (
-      id,
-      work_problem_uid,
-      language_id,
-      movie_id,
-      /*movie_file,--?
-      movie_file_expire_at,--?*/
-      play_time,
-      tips_title_1,
-      tips_title_2,
-      tips_title_3,
-      tips_title_4,
-      tips_title_5,
-      tips_title_6,
-      tips_content_1,
-      tips_content_2,
-      tips_content_3,
-      tips_content_4,
-      tips_content_5,
-      tips_content_6,
-      created_at,
-      updated_at
-    )
-      VALUES (
-      '',/*id => work_problems`のidと同じ*/
-      '',/*work_problem_uid　=> work_problems`のidと同じ*/
-      '',/*language_id => https://github.com/gi-no/learning/wiki/language_id*/
-      '',/*movie_id vimeoのあれ*/
-      '',/*play_time 動画時間*/
-      '',/*tips_title_1  READMの#のタイトル　 <= Tipsではないことに注意*/
-      '',/*tips_title_2 chapのTipsのタイトル　数に合わせて増減*/
-      '',/*tips_title_3*/
-      '',/*tips_title_4*/
-      '',/*tips_title_5*/
-      '',/*tips_title_6*/
-      '',/*tips_content_1 READMの#の記述 <= Tipsではないことに注意*/
-      '',/*tips_content_2 chapのTipsの内容　数に合わせて増減*/
-      '',/*tips_content_3*/
-      '',/*tips_content_4*/
-      '',/*tips_content_5*/
-      '',/*tips_content_6*/
-      NOW(),
-      NOW()
-      );
-    
-    
     '''
+    
+    #/* work_problem_languages*/
+    insert_work_problem_languages = "INSERT INTO `work_problem_languages`\
+      (\
+      id,\
+      work_problem_uid,\
+      language_id,\
+      movie_id,\
+      /*movie_file,--?\
+      movie_file_expire_at,--?*/\
+      play_time,\
+      tips_title_1,\
+      tips_title_2,\
+      tips_title_3,\
+      tips_title_4,\
+      tips_title_5,\
+      tips_title_6,\
+      tips_title_7,\
+      tips_title_8,\
+      tips_title_9,\
+      tips_content_1,\
+      tips_content_2,\
+      tips_content_3,\
+      tips_content_4,\
+      tips_content_5,\
+      tips_content_6,\
+      tips_content_7,\
+      tips_content_8,\
+      tips_content_9,\
+      created_at,\
+      updated_at\
+    )\
+      VALUES (\
+      '"+ str(work_problems_id) +"',/*id => work_problems`のidと同じ*/\
+      '"+ str(work_problems_id) +"',/*work_problem_uid　=> work_problems`のidと同じ*/\
+      '"+ language_id +"',/*language_id => https://github.com/gi-no/learning/wiki/language_id*/\
+      '"+ vimeo_nums[cur_chap] +"',/*movie_id vimeoのあれ*/\
+      '"+ vimeo_playtime[cur_chap] +"',/*play_time 動画時間*/\
+      '"+ chapREADME_title +"',/*tips_title_1  READMの#のタイトル　 <= Tipsではないことに注意*/\
+      '"+ tips_titles[0] +"',/*tips_title_2 chapのTipsのタイトル　数に合わせて増減*/\
+      '"+ tips_titles[1] +"',/*tips_title_3*/\
+      '"+ tips_titles[2] +"',/*tips_title_4*/\
+      '"+ tips_titles[3] +"',/*tips_title_5*/\
+      '"+ tips_titles[4] +"',/*tips_title_6*/\
+      '"+ tips_titles[5] +"',/*tips_title_7*/\
+      '"+ tips_titles[6] +"',/*tips_title_8*/\
+      '"+ tips_titles[7] +"',/*tips_title_9*/\
+      '"+ chapREADME_content +"',/*tips_content_1 READMの#の記述 <= Tipsではないことに注意*/\
+      '"+ tips_contents[0] +"',/*tips_content_2 chapのTipsの内容　数に合わせて増減*/\
+      '"+ tips_contents[1] +"',/*tips_content_3*/\
+      '"+ tips_contents[2] +"',/*tips_content_4*/\
+      '"+ tips_contents[3] +"',/*tips_content_5*/\
+      '"+ tips_contents[4] +"',/*tips_content_6*/\
+      '"+ tips_contents[5] +"',/*tips_content_7*/\
+      '"+ tips_contents[6] +"',/*tips_content_8*/\
+      '"+ tips_contents[7] +"',/*tips_content_9*/\
+      NOW(),\
+      NOW()\
+      );"
+    
+    #
+    print("====" + str(cur_chap) + "のinsert_work_problem_languagesを出力します====")
+    print(insert_work_problem_languages)
+    print("====完了====")
 
-
-
-
+    #次のチャプへ
+    work_problems_id = 1 + int(work_problems_id)
+    cur_chap = 1 + int(cur_chap)
 
 
 
