@@ -13,7 +13,7 @@ chap = 10#######################################################################
 
 #path の生成
 if chap <= 9:
-    chap = "1" + str(chap)
+    chap = "0" + str(chap)
 else:
     chap = str(chap)
 readme_path = "contents/" + kouza + "/chap"+ chap + "/README.md"
@@ -117,8 +117,9 @@ print("/*============================*/")
 #work_problems生成
 #chap文ループ
 print("/*chap1のwork_problems_idを入力してください => `work_problems`の空いてるとこ*/")
-work_problems_id = 24001 #####################################################################
+work_problems_id = "24001" #####################################################################
 #work_problems_id = input()
+
 cur_chap = 1
 chap = int(chap)
 while cur_chap <= chap:
@@ -126,7 +127,12 @@ while cur_chap <= chap:
     #「各chapの」READMEのタイトルと内容採る
     chapREADME_title = ""
     chapREADME_content = ""
-    chapREADME_path = "contents/" + kouza + "/chap"+ str(chap) + "/README.md"
+    #path の生成
+    if cur_chap <= 9:
+        cur_chap = "0" + str(cur_chap)
+    else:
+        cur_chap = str(cur_chap)
+    chapREADME_path = "contents/" + kouza + "/chap"+ str(cur_chap) + "/README.md"
     f = open(chapREADME_path)
     for a in f:
         if "## " in a:
@@ -139,22 +145,22 @@ while cur_chap <= chap:
     #print(chapREADME_content)
     #
     print("layout_typeを入力してください => [layout_type => 0: 動画 + paiza io, 1: 動画のみ, 10: paiza cloud]")
-    layout_type_num = 0###########################################################################
+    layout_type_num = "0"###########################################################################
     #layout_type_num = input()
 
     work_problems_insert = "INSERT INTO `work_problems`\
     (id, uid, no, work_uid, title, description, layout_type, \
     not_login_content, free_content, created_at, updated_at, state_id)\
-    VALUES(\'+\
-    work_problems_id+\',\'+\
-    work_problems_id+\',\'+\
-    str(cur_chap)+\',\'+\
-    works_uid+\',\'+\
-    chapREADME_title+\',\'+\
-    chapREADME_content+\',\'+\
-    layout_type_num+\',\'0\',\'0\',NOW(),NOW(),\'1\');"
+    VALUES(\'"+\
+    str(work_problems_id)+"\',\'"+\
+    str(work_problems_id)+"\',\'"+\
+    str(cur_chap)+"\',\'"+\
+    str(works_uid)+"\',\'"+\
+    chapREADME_title+"\',\'"+\
+    chapREADME_content+"\',\'"+\
+    str(layout_type_num)+"\',\'0\',\'0\',NOW(),NOW(),\'1\');"
     
-    print("/*===="+str(cur_chap)+"のinsert_work_problems生成====*/")
+    print("/*====chap"+str(cur_chap)+"のinsert_work_problems生成====*/")
     print(work_problems_insert)
     print("/*====完了====*/")
     
@@ -165,8 +171,11 @@ while cur_chap <= chap:
     print("/*insert_work_problem_languages生成*/")
 
 
+#########
+'''
+なう：chap01~chap10のフォルダがないから引き出せなくエラー
 
-
+'''
 
 
 
