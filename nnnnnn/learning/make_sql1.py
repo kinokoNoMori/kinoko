@@ -164,16 +164,16 @@ while cur_chap <= chap:
     #layout_type_num = input()
 
     work_problems_insert = "INSERT INTO `work_problems`\
-    (id, uid, no, work_uid, title, description, layout_type, \
-    not_login_content, free_content, created_at, updated_at, state_id)\
-    VALUES(\'"+\
-    str(work_problems_id)+"\',\'"+\
-    str(work_problems_id)+"\',\'"+\
-    str(cur_chap)+"\',\'"+\
-    str(works_uid)+"\',\'"+\
-    chapREADME_title+"\',\'"+\
-    chapREADME_content+"\',\'"+\
-    str(layout_type_num)+"\',\'0\',\'0\',NOW(),NOW(),\'1\');"
+(id, uid, no, work_uid, title, description, layout_type, \
+not_login_content, free_content, created_at, updated_at, state_id)\
+VALUES(\'"+\
+str(work_problems_id)+"\',\'"+\
+str(work_problems_id)+"\',\'"+\
+str(cur_chap)+"\',\'"+\
+str(works_uid)+"\',\'"+\
+chapREADME_title+"\',\'"+\
+chapREADME_content+"\',\'"+\
+str(layout_type_num)+"\',\'0\',\'0\',NOW(),NOW(),\'1\');"
     
     print("/*====chap"+str(cur_chap)+"のinsert_work_problems生成====*/")
     print(work_problems_insert)
@@ -249,60 +249,60 @@ while cur_chap <= chap:
     
     #/* work_problem_languages*/
     insert_work_problem_languages = "INSERT INTO `work_problem_languages`\
-    (\
-    id,\
-    work_problem_uid,\
-    language_id,\
-    movie_id,\
-    play_time,\
-    tips_title_1,\
-    tips_title_2,\
-    tips_title_3,\
-    tips_title_4,\
-    tips_title_5,\
-    tips_title_6,\
-    tips_title_7,\
-    tips_title_8,\
-    tips_title_9,\
-    tips_content_1,\
-    tips_content_2,\
-    tips_content_3,\
-    tips_content_4,\
-    tips_content_5,\
-    tips_content_6,\
-    tips_content_7,\
-    tips_content_8,\
-    tips_content_9,\
-    created_at,\
-    updated_at\
-    )\
-    VALUES (\
-    '"+ str(work_problems_id) +"',/*id => work_problems`のidと同じ*/\
-    '"+ str(work_problems_id) +"',/*work_problem_uid　=> work_problems`のidと同じ*/\
-    '"+ language_id +"',/*language_id => https://github.com/gi-no/learning/wiki/language_id*/\
-    '"+ vimeo_nums[int(cur_chap)-1] +"',/*movie_id vimeoのあれ*/\
-    '"+ vimeo_playtime[int(cur_chap)-1] +"',/*vimeo_playtime 動画時間*/\
-    '"+ chapREADME_title +"',/*tips_title_1  READMの#のタイトル　 <= Tipsではないことに注意*/\
-    '"+ tips_titles[0] +"',/*tips_title_2 chapのTipsのタイトル　数に合わせて増減*/\
-    '"+ tips_titles[1] +"',/*tips_title_3*/\
-    '"+ tips_titles[2] +"',/*tips_title_4*/\
-    '"+ tips_titles[3] +"',/*tips_title_5*/\
-    '"+ tips_titles[4] +"',/*tips_title_6*/\
-    '"+ tips_titles[5] +"',/*tips_title_7*/\
-    '"+ tips_titles[6] +"',/*tips_title_8*/\
-    '"+ tips_titles[7] +"',/*tips_title_9*/\
-    '"+ chapREADME_content + "',/*tips_content_1 READMのしゃーぷの記述 <= Tipsではないことに注意*/\
-    '"+ tips_contents[0] +"',/*tips_content_2 chapのTipsの内容,数に合わせて増減*/\
-    '"+ tips_contents[1] +"',/*tips_content_3*/\
-    '"+ tips_contents[2] +"',/*tips_content_4*/\
-    '"+ tips_contents[3] +"',/*tips_content_5*/\
-    '"+ tips_contents[4] +"',/*tips_content_6*/\
-    '"+ tips_contents[5] +"',/*tips_content_7*/\
-    '"+ tips_contents[6] +"',/*tips_content_8*/\
-    '"+ tips_contents[7] +"',/*tips_content_9*/\
-    NOW(),\
-    NOW()\
-    );"
+(\
+id,\
+work_problem_uid,\
+language_id,\
+movie_id,\
+play_time,\
+tips_title_1,\
+tips_title_2,\
+tips_title_3,\
+tips_title_4,\
+tips_title_5,\
+tips_title_6,\
+tips_title_7,\
+tips_title_8,\
+tips_title_9,\
+tips_content_1,\
+tips_content_2,\
+tips_content_3,\
+tips_content_4,\
+tips_content_5,\
+tips_content_6,\
+tips_content_7,\
+tips_content_8,\
+tips_content_9,\
+created_at,\
+updated_at\
+)\
+VALUES (\
+'"+ str(work_problems_id) +"',/*id => work_problems`のidと同じ*/\
+'"+ str(work_problems_id) +"',/*work_problem_uid　=> work_problems`のidと同じ*/\
+'"+ language_id +"',/*language_id => https://github.com/gi-no/learning/wiki/language_id*/\
+'"+ vimeo_nums[int(cur_chap)-1] +"',/*movie_id vimeoのあれ*/\
+'"+ vimeo_playtime[int(cur_chap)-1] +"',/*vimeo_playtime 動画時間*/\
+'"+ chapREADME_title +"',/*tips_title_1  READMの#のタイトル　 <= Tipsではないことに注意*/\
+'"+ tips_titles[0] +"',/*tips_title_2 chapのTipsのタイトル　数に合わせて増減*/\
+'"+ tips_titles[1] +"',/*tips_title_3*/\
+'"+ tips_titles[2] +"',/*tips_title_4*/\
+'"+ tips_titles[3] +"',/*tips_title_5*/\
+'"+ tips_titles[4] +"',/*tips_title_6*/\
+'"+ tips_titles[5] +"',/*tips_title_7*/\
+'"+ tips_titles[6] +"',/*tips_title_8*/\
+'"+ tips_titles[7] +"',/*tips_title_9*/\
+'"+ chapREADME_content + "',/*tips_content_1 READMのしゃーぷの記述 <= Tipsではないことに注意*/\
+'"+ tips_contents[0] +"',/*tips_content_2 chapのTipsの内容,数に合わせて増減*/\
+'"+ tips_contents[1] +"',/*tips_content_3*/\
+'"+ tips_contents[2] +"',/*tips_content_4*/\
+'"+ tips_contents[3] +"',/*tips_content_5*/\
+'"+ tips_contents[4] +"',/*tips_content_6*/\
+'"+ tips_contents[5] +"',/*tips_content_7*/\
+'"+ tips_contents[6] +"',/*tips_content_8*/\
+'"+ tips_contents[7] +"',/*tips_content_9*/\
+NOW(),\
+NOW()\
+);"
     
     #
     print("====" + str(cur_chap) + "のinsert_work_problem_languagesを出力します====")
@@ -312,17 +312,6 @@ while cur_chap <= chap:
     #次のチャプへ
     work_problems_id = 1 + int(work_problems_id)
     cur_chap = 1 + int(cur_chap)
-
-
-
-
-
-
-
-
-
-
-
 
 
 
