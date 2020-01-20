@@ -1,9 +1,0 @@
-20-Sep-2019 01:29:15.789 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload Reloading context [/mydatabase]
-20-Sep-2019 01:29:15.883 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mydatabase] has started
-20-Sep-2019 01:29:16.589 WARNING [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [mydatabase] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
-20-Sep-2019 01:29:16.610 WARNING [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [mydatabase] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@11.0.1/java.lang.Object.wait(Native Method)
- java.base@11.0.1/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
- com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)
-20-Sep-2019 01:29:17.162 INFO [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-20-Sep-2019 01:29:17.184 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mydatabase] is completed
